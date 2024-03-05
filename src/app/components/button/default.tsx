@@ -1,9 +1,9 @@
 import "./default.scss";
 
-export default function Button({text, imageUrl}) {
+export default function Button({ text, svg }) {
   return (
     <div className="button">
-      <img height="48px" width="48px" src={imageUrl} />
+      {svg}
       {text}
     </div>
   );

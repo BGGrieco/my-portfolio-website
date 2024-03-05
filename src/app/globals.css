@@ -149,6 +149,14 @@ span {
   margin-bottom: 96px;
 }
 
+.marginTop_sm {
+  margin-top: 24px;
+}
+
+.marginTop_med {
+  margin-top: 48px;
+}
+
 .marginTop_lrg {
   margin-top: 96px;
 }
@@ -173,10 +181,18 @@ span {
 
 .card {
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px) saturate(1);
+  backdrop-filter: blur(2px) saturate(1.2);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 32px;
   box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.2);
   padding: 18px 24px 24px 24px;
+}
+
+/* GROUP DECLARATIONS */
+#projects,
+#experience,
+#skills,
+#about {
+  height: 48px;
 }

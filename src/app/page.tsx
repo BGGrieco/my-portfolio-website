@@ -8,6 +8,8 @@ export default function Home() {
     <main className={styles.main}>
       <WelcomeCard />
 
+      <div id="projects" className="marginBottom_lrg"></div>
+
       <Image
         src="/projects.svg"
         alt="Projects"
@@ -18,17 +20,34 @@ export default function Home() {
       />
 
       <div className={styles.projectsContainer}>
-        <ProjectCard title="Wind3 Business" subTitle="Cyber Security Portal" imageUrl="/w3bCTI.png" />
-        <ProjectCard title="Custom Fit" subTitle="The Beginning" imageUrl="/customFit.png" />
-        <ProjectCard title="patientMpower" subTitle="Patient app" imageUrl="/phone.png" />
-        <ProjectCard title="The Irish Times" subTitle="Listen" imageUrl="/listen.png" />
+        <ProjectCard
+          title="Wind3 Business"
+          subTitle="Cyber Security Portal"
+          imageUrl="/w3bCTI.png"
+        />
+        <ProjectCard
+          title="Custom Fit"
+          subTitle="The Beginning"
+          imageUrl="/customFit.png"
+        />
+        <ProjectCard
+          title="patientMpower"
+          subTitle="Patient app"
+          imageUrl="/phone.png"
+        />
+        <ProjectCard
+          title="The Irish Times"
+          subTitle="Listen"
+          imageUrl="/listen.png"
+        />
       </div>
+
+      <div id="experience" className="marginBottom_lrg"></div>
 
       <Image
         src="/experience.svg"
         alt="Projects"
         layout="responsive"
-        className="marginTop_lrg"
         width={1344}
         height={148}
       />
