@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
+import NavBar from "./components/navBar/default";
 import Footer from "./components/footer/default";
-// import NavBar from "./components/navBar/default";
 
 const wSans = Work_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -46,11 +46,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode,
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={wSans.className}>
+        <NavBar />
         {children}
         <Footer />
       </body>
