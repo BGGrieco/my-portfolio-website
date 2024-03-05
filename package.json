@@ -15,15 +15,9 @@
     "sass": "^1.71.1"
   },
   "devDependencies": {
-    "@svgr/webpack": "^8.1.0",
     "@types/node": "20.11.21",
     "@types/react": "18.2.60",
-    "@webpack-cli/generators": "^3.0.7",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.3.3",
-    "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4"
+    "eslint-config-next": "14.1.0"
   }
 }
