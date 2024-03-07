@@ -94,9 +94,13 @@ body {
 }
 
 h1 {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 8em;
   font-weight: 700;
+}
+
+h2, h3, h4 {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h2 {
@@ -115,6 +119,7 @@ h4 {
 }
 
 p {
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
 }
@@ -125,7 +130,7 @@ a {
 }
 
 span {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* GLOBAL CLASSES */
@@ -186,7 +191,7 @@ span {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 32px;
   box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.2);
-  padding: 18px 24px 24px 24px;
+  padding: 26px 32px 32px 32px;
 }
 
 /* GROUP DECLARATIONS */
