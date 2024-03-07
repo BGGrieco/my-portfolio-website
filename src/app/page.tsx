@@ -11,7 +11,7 @@ export default function Home() {
       <div id="projects" className="marginBottom_lrg"></div>
 
       <Image
-        src="/projects.svg"
+        src="/projects.png"
         alt="Projects"
         layout="responsive"
         className="marginBottom_med"
@@ -45,7 +45,7 @@ export default function Home() {
       <div id="experience" className="marginBottom_lrg"></div>
 
       <Image
-        src="/experience.svg"
+        src="/experience.png"
         alt="Projects"
         layout="responsive"
         width={1344}

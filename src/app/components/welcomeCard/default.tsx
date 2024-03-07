@@ -1,10 +1,8 @@
+"use client";
 import Button from "../button/default";
-import Email from "../../../../public/email.svg";
-import Phone from "../../../../public/phone.svg";
+import EmailIcon from "../../../../public/email.svg";
+import PhoneIcon from "../../../../public/phone.svg";
 import "./default.scss";
-
-let mailSVG = <Email/>;
-let phoneSVG = <Phone/>;
 
 export default function WelcomeCard() {
   return (
@@ -17,8 +15,8 @@ export default function WelcomeCard() {
         Location: <span>Milan, Italy</span>
       </h3>
       <div className="buttonContainer">
-        <Button svg={mailSVG} text="brian.g.grieco@gmail.com" />
-        <Button svg={phoneSVG} text="+39 370 702 6255" />
+        <Button svg={<EmailIcon />} text="brian.g.grieco@gmail.com" />
+        <Button svg={<PhoneIcon />} text="+39 370 702 6255" />
       </div>
     </div>
   );
