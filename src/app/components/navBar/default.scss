@@ -40,21 +40,45 @@
             width: 132px;
         }
 
-        li svg {
-            display: none;
-            height: 100%;
-            left: -40%;
-            position: absolute;
-            top: 0;
-            z-index: -1;
+        li.active {
+            color: #6f6af8;
         }
 
         li:hover {
             color: #6f6af8;
         }
 
-        li:hover svg {
-            display: block;
+        .selectorImage {
+            animation: disappear 0.3s ease forwards;
+            height: 53px;
+            left: -45%;
+            position: absolute;
+            top: 0;
+            transform-origin: 50%, 50%;
+            width: auto;
+            z-index: -1;
         }
+
+        li.active .selectorImage {
+            animation: appear 0.3s ease forwards;
+        }
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
     }
 }
