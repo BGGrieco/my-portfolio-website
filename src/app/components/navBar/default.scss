@@ -40,21 +40,79 @@
             width: 132px;
         }
 
-        li svg {
+        .selectorImage {
             display: none;
-            height: 100%;
-            left: -40%;
             position: absolute;
+        }
+
+        li.active {
+            color: #6f6af8;
+        }
+
+        li.active .selectorImage {
+            animation: slideInFromRight 0.5s ease forwards;
+            display: block;
+            height: 53px;
+            left: -45%;
             top: 0;
+            width: auto;
             z-index: -1;
+        }
+
+        li.active .selectorImage.toNext {
+            animation: slideOutToRight 0.5s ease forwards;
+        }
+
+        li.active .selectorImage.fromPrevious {
+            animation: slideInfromLeft 0.5s ease forwards;
+        }
+
+        li.active .selectorImage.fromNext {
+            animation: slideOutToLeft 0.5s ease forwards;
+        }
+
+        li.active .selectorImage.toPrevious {
+            animation: slideInFromRight 0.5s ease forwards;
         }
 
         li:hover {
             color: #6f6af8;
         }
+    }
+}
 
-        li:hover svg {
-            display: block;
-        }
+@keyframes slideOutToRight {
+    from {
+        left: -45%;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        left: -45%;
+    }
+    to {
+        left: -50%;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        left: 150%;
+    }
+    to {
+        left: -45%;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        left: -150%;
+    }
+    to {
+        left: -45%;
     }
 }
