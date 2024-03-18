@@ -2,8 +2,17 @@
     padding: 6px 63px;
     position: fixed;
     margin: auto;
+    top: -100px;
     width: 100vw;
     z-index: 2;
+
+    &.active{
+        animation: slideUp 0.3s ease forwards;
+    }
+
+    &.active.hidden{
+        animation: slideDown 0.3s ease forwards;
+    }
 
     div {
         -webkit-backdrop-filter: blur(2px) saturate(1);
@@ -80,5 +89,23 @@
     }
     to {
         transform: scale(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100px;
     }
 }

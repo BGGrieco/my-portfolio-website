@@ -59,10 +59,41 @@ const useScrollspy = (ids: string[], offset: number = 0) => {
 };
 
 export default function NavBar() {
-  const ids = ["projectsSection", "experienceSection", "skillSection", "aboutSection"];
+  const ids = [
+    "projectsSection",
+    "experienceSection",
+    "skillSection",
+    "aboutSection",
+  ];
   const activeId = useScrollspy(ids, 350);
+
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (window.scrollY > lastScrollY) {
+      // if scroll down hide the navbar
+      setShow(false);
+    } else {
+      // if scroll up show the navbar
+      setShow(true);
+    }
+
+    // remember current page location to use in the next move
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavbar);
+
+    // cleanup function
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
+
   return (
-    <div className="navBar">
+    <div className={`active ${show && 'hidden'} navBar`}>
       <div className="card">
         <ul
           onClick={(event: React.SyntheticEvent) => {
