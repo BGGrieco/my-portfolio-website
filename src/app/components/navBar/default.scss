@@ -2,8 +2,17 @@
     padding: 6px 63px;
     position: fixed;
     margin: auto;
+    top: -100px;
     width: 100vw;
     z-index: 2;
+
+    &.active {
+        animation: slideUp 0.5s ease forwards;
+    }
+
+    &.active.display {
+        animation: slideDown 0.5s ease forwards;
+    }
 
     div {
         -webkit-backdrop-filter: blur(2px) saturate(1);
@@ -40,21 +49,63 @@
             width: 132px;
         }
 
-        li svg {
-            display: none;
-            height: 100%;
-            left: -40%;
-            position: absolute;
-            top: 0;
-            z-index: -1;
+        li.active {
+            color: #6f6af8;
         }
 
         li:hover {
             color: #6f6af8;
         }
 
-        li:hover svg {
-            display: block;
+        .selectorImage {
+            animation: disappear 0.3s ease forwards;
+            height: 53px;
+            left: -45%;
+            position: absolute;
+            top: 0;
+            transform-origin: 50%, 50%;
+            width: auto;
+            z-index: -1;
         }
+
+        li.active .selectorImage {
+            animation: appear 0.3s ease forwards;
+        }
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100px;
     }
 }

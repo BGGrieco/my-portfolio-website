@@ -19,7 +19,7 @@ export default function Home() {
         height={176}
       />
 
-      <div className={styles.projectsContainer}>
+      <div id="projectsSection" className={styles.projectsContainer}>
         <ProjectCard
           title="Wind3 Business"
           subTitle="Cyber Security Portal"
@@ -51,6 +51,95 @@ export default function Home() {
         width={1344}
         height={148}
       />
+
+      <div id="experienceSection" className={styles.projectsContainer}>
+        <ProjectCard
+          title="Wind3 Business"
+          subTitle="Cyber Security Portal"
+          imageUrl="/w3bCTI.png"
+        />
+        <ProjectCard
+          title="Custom Fit"
+          subTitle="The Beginning"
+          imageUrl="/customFit.png"
+        />
+        <ProjectCard
+          title="patientMpower"
+          subTitle="Patient app"
+          imageUrl="/phone.png"
+        />
+        <ProjectCard
+          title="The Irish Times"
+          subTitle="Listen"
+          imageUrl="/listen.png"
+        />
+      </div>
+
+      <div id="skills" className="marginBottom_lrg"></div>
+
+      <Image
+        src="/experience.png"
+        alt="Projects"
+        layout="responsive"
+        width={1344}
+        height={148}
+      />
+
+      <div id="skillSection" className={styles.projectsContainer}>
+        <ProjectCard
+          title="Wind3 Business"
+          subTitle="Cyber Security Portal"
+          imageUrl="/w3bCTI.png"
+        />
+        <ProjectCard
+          title="Custom Fit"
+          subTitle="The Beginning"
+          imageUrl="/customFit.png"
+        />
+        <ProjectCard
+          title="patientMpower"
+          subTitle="Patient app"
+          imageUrl="/phone.png"
+        />
+        <ProjectCard
+          title="The Irish Times"
+          subTitle="Listen"
+          imageUrl="/listen.png"
+        />
+      </div>
+
+      <div id="about" className="marginBottom_lrg"></div>
+
+      <Image
+        src="/experience.png"
+        alt="Projects"
+        layout="responsive"
+        width={1344}
+        height={148}
+      />
+
+      <div id="aboutSection" className={styles.projectsContainer}>
+        <ProjectCard
+          title="Wind3 Business"
+          subTitle="Cyber Security Portal"
+          imageUrl="/w3bCTI.png"
+        />
+        <ProjectCard
+          title="Custom Fit"
+          subTitle="The Beginning"
+          imageUrl="/customFit.png"
+        />
+        <ProjectCard
+          title="patientMpower"
+          subTitle="Patient app"
+          imageUrl="/phone.png"
+        />
+        <ProjectCard
+          title="The Irish Times"
+          subTitle="Listen"
+          imageUrl="/listen.png"
+        />
+      </div>
     </main>
   );
 }
