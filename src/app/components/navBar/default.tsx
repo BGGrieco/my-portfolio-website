@@ -72,6 +72,8 @@ export default function NavBar() {
   const controlNavbar = () => {
     if (window.scrollY > 400) {
       setShow(false);
+    } else {
+      setShow(true);
     }
   };
 
