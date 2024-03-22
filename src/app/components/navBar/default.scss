@@ -6,12 +6,12 @@
     width: 100vw;
     z-index: 2;
 
-    &.active{
-        animation: slideUp 0.3s ease forwards;
+    &.active {
+        animation: slideUp 0.5s ease forwards;
     }
 
-    &.active.hidden{
-        animation: slideDown 0.3s ease forwards;
+    &.active.display {
+        animation: slideDown 0.5s ease forwards;
     }
 
     div {
