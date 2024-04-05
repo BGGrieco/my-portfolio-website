@@ -10,24 +10,23 @@
         inset 0 24px 56px rgba(255, 255, 255, 0.5),
         inset 0 -2px 6px rgba(0, 0, 0, 0.5),
         8px 8px 24px rgba(0, 0, 0, 0);
-    color: #ffffff;
-    cursor: pointer;
+        color: rgba(0, 0, 0, 0.8);
     display: flex;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     width: 500px;
     padding: 12px 48px;
     justify-content: space-between;
 
     svg path {
-        stroke: #ffffff;
+        stroke: rgba(0, 0, 0, 0.8);
     }
 
     &:hover {
         animation: elevate 0.5s ease forwards;
 
         svg path {
-            animation: colorIt 0.5s ease forwards;
+            animation: colorIt 0.3s ease forwards;
         }
     }
 }
@@ -42,7 +41,7 @@
             inset 0 24px 56px rgba(255, 255, 255, 0.5),
             inset 0 -2px 6px rgba(0, 0, 0, 0.5),
             8px 8px 24px rgba(0, 0, 0, 0);
-        color: #ffffff;
+        color: rgba(0, 0, 0, 0.8);
     }
     100% {
         -webkit-backdrop-filter: blur(12px) saturate(5);
@@ -59,7 +58,7 @@
 
 @keyframes colorIt {
     0% {
-        stroke: #ffffff;
+        stroke: rgba(0, 0, 0, 0.8);
     }
     100% {
         stroke: #6f6af8;

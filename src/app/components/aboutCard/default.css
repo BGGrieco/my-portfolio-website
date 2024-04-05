@@ -1,0 +1,1 @@
+.aboutCard{background:linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(254, 254, 254, 0.4))}.squaresGrid{display:grid;grid-template-columns:repeat(auto-fill, minmax(50%, 1fr));grid-auto-rows:1fr}.squaresGrid .externalCard:nth-child(odd){margin-left:0}.squaresGrid .externalCard:nth-child(even){margin-right:0}

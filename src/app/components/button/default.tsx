@@ -1,10 +1,12 @@
 import "./default.scss";
 
-export default function Button({ text, svg }) {
+export default function Button({ text, svg, href }) {
   return (
-    <div className="button">
-      {svg}
-      {text}
-    </div>
+    <a href={href}>
+      <div className="button">
+        {svg}
+        {text}
+      </div>
+    </a>
   );
 }
