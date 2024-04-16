@@ -10,27 +10,11 @@
   width: 100vw;
 }
 
-.squaresGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  grid-auto-rows: 1fr;
+.projectsSection .squaresGrid {
+  margin-left: -24px;
   width: calc(100% + 48px);
 }
 
-.squaresGrid::before {
-  content: "";
-  width: 0;
-  padding-bottom: 100%;
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-.squaresGrid > *:first-child {
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
-.projectsContainer,
 .experienceContainer,
 .skillContainer,
 .aboutContainer {

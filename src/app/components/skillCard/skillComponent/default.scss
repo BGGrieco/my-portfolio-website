@@ -15,11 +15,14 @@
         box-shadow: none;
         height: 48px;
         left: 12px;
-        line-height: 22px;
         margin: 13px 96px 0 0;
         padding: 12px 48px;
         position: relative;
         width: 240px;
+
+        h4 {
+            line-height: 22px;
+        }
     }
 
     &.offset img {

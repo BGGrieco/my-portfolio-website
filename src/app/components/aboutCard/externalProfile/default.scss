@@ -2,4 +2,21 @@
     box-shadow: none;
     margin: 12px;
     text-decoration: none;
+
+    h3 {
+        text-align: left;
+    }
+
+    .externalImage {
+        margin: 24px auto 0 auto;
+        opacity: 0.8;
+        position: relative;
+        width: 25%;
+    }
+
+    &:hover {
+        h3 {
+            color: #6f6af8;
+        }
+    }
 }

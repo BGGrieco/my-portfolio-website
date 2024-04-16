@@ -21,7 +21,7 @@ export default function AboutCard() {
       </h4>
       <h4>
         I’d love to hear from you, I’m always open to new opportunities and
-        discussions. Have a great day!
+        discussions.
       </h4>
 
       <div className="buttonContainer marginTop_sm marginBottom_sm">
@@ -43,10 +43,30 @@ export default function AboutCard() {
         following platforms:
       </h4>
       <div className="marginTop_sm squaresGrid">
-        <ExternalProfile title="LinkedIn" href="#" imageUrl="/arrow.svg" />
-        <ExternalProfile title="GitHub" href="#" imageUrl="/arrow.svg" />
-        <ExternalProfile title="CodePen" href="#" imageUrl="/arrow.svg" />
-        <ExternalProfile title="Dribbble" href="#" imageUrl="/arrow.svg" />
+        <ExternalProfile
+          title="LinkedIn"
+          href="https://www.linkedin.com/in/briangrieco/"
+          imageUrl="/linkedin.png"
+          altImageUrl="linkedinOn.png"
+        />
+        <ExternalProfile
+          title="GitHub"
+          href="https://github.com/BGGrieco"
+          imageUrl="/octocat.png"
+          altImageUrl="octocatOn.png"
+        />
+        <ExternalProfile
+          title="CodePen"
+          href="https://codepen.io/BGGrieco"
+          imageUrl="/codepen.png"
+          altImageUrl="codepenOn.png"
+        />
+        <ExternalProfile
+          title="Dribbble"
+          href="https://dribbble.com/bggrieco"
+          imageUrl="/dribbble.png"
+          altImageUrl="dribbbleOn.png"
+        />
       </div>
     </div>
   );

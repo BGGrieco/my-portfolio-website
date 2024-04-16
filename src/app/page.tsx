@@ -20,31 +20,30 @@ export default function Home() {
           className="marginBottom_med"
           width={2725}
           height={388}
+          priority={true} 
         />
 
-        <div className={styles.projectsContainer}>
-          <div className="squaresGrid">
-            <ProjectCard
-              title="Wind3 Business"
-              subTitle="Cyber Security Portal"
-              imageUrl="/w3bCTI.png"
-            />
-            <ProjectCard
-              title="Custom Fit"
-              subTitle="The Beginning"
-              imageUrl="/customFit.png"
-            />
-            <ProjectCard
-              title="patientMpower"
-              subTitle="Patient app"
-              imageUrl="/pMpApp.png"
-            />
-            <ProjectCard
-              title="The Irish Times"
-              subTitle="Listen"
-              imageUrl="/listen.png"
-            />
-          </div>
+        <div className="squaresGrid">
+          <ProjectCard
+            title="Wind3 Business"
+            subTitle="Cyber Security Portal"
+            imageUrl="/w3bCTI.png"
+          />
+          <ProjectCard
+            title="Custom Fit"
+            subTitle="The Beginning"
+            imageUrl="/customFit.png"
+          />
+          <ProjectCard
+            title="patientMpower"
+            subTitle="Patient app"
+            imageUrl="/pMpApp.png"
+          />
+          <ProjectCard
+            title="The Irish Times"
+            subTitle="Listen"
+            imageUrl="/listen.png"
+          />
         </div>
       </div>
 

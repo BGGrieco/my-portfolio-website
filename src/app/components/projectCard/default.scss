@@ -32,19 +32,13 @@
         color: #000000;
     }
 
-    img {
-        bottom: 24px;
+    .centerImage {
         display: block;
-        position: absolute;
-        right: 24px;
-
-        &.centerImage {
-            margin: auto;
-            position: relative;
-            height: auto;
-            top: 15%;
-            width: 60%;
-        }
+        margin: auto;
+        position: relative;
+        height: auto;
+        top: 15%;
+        width: 60%;
     }
 }
 
