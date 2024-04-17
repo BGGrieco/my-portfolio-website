@@ -2,43 +2,25 @@
 import React from "react";
 import "./default.scss";
 
-// export default function ExternalProfile({ title, imageUrl, altImageUrl, href }) {
-//   return (
-//     <a href={href} className="card externalCard">
-//       <h3>{title}</h3>
-//       <img
-//         className="externalImage"
-//         src={imageUrl}
-//         onMouseOver={(e) => (e.currentTarget.src = `${altImageUrl}`)}
-//         onMouseOut={(e) => (e.currentTarget.src = `${imageUrl}`)}
-//         alt={title + " icon"}
-//       />
-//       <img className="arrow" src="/arrow.svg" alt="Arrow" />
-//     </a>
-//   );
-// }
-
 export default function ExternalProfile({
   title,
   imageUrl,
   altImageUrl,
   href,
 }) {
-  React.useEffect(() => {
-    let imageVar = document.getElementById("id" + title) as HTMLImageElement;
-    if (imageVar) {
-      console.log(imageVar);
-    }
-  }, [imageVar]);
-  // const imageVar = document.getElementById("idCodePen");
-  // console.log(imageVar);
+  const handleMouseOver = (event) => {
+    event.target.querySelector(".externalImage").src = altImageUrl;
+  };
+  const handleMouseOut = (event) => {
+    event.target.querySelector(".externalImage").src = imageUrl;
+  };
 
   return (
     <a
       href={href}
       className="card externalCard"
-      onMouseOver={(imageVar.src=altImageUrl)}
-      onMouseOut={(imageVar.src=imageUrl)}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
     >
       <h3>{title}</h3>
       <img

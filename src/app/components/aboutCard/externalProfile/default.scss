@@ -3,6 +3,10 @@
     margin: 12px;
     text-decoration: none;
 
+    * {
+        pointer-events: none;
+    }
+
     h3 {
         text-align: left;
     }
@@ -14,9 +18,16 @@
         width: 25%;
     }
 
-    &:hover {
-        h3 {
-            color: #6f6af8;
-        }
+    &:hover .arrow {
+        animation: slide 0.3s ease forwards;
+    }
+}
+
+@keyframes slide {
+    from {
+        right: 24px;
+    }
+    to {
+right: 48px;
     }
 }
