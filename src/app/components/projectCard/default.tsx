@@ -9,7 +9,7 @@ export default function ProjectCard({ title, subTitle, imageUrl }) {
           <h4>{subTitle}</h4>
         </span>
         <img className="centerImage" src={imageUrl} />
-        <img src="/arrow.svg" />
+        <img className="arrow" src="/arrow.svg" />
       </div>
     </div>
   );

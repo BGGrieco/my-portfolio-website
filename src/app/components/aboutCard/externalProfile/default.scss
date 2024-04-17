@@ -1,0 +1,33 @@
+.externalCard {
+    box-shadow: none;
+    margin: 12px;
+    text-decoration: none;
+
+    * {
+        pointer-events: none;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    .externalImage {
+        margin: 24px auto 0 auto;
+        opacity: 0.8;
+        position: relative;
+        width: 25%;
+    }
+
+    &:hover .arrow {
+        animation: slide 0.3s ease forwards;
+    }
+}
+
+@keyframes slide {
+    from {
+        right: 24px;
+    }
+    to {
+right: 48px;
+    }
+}
