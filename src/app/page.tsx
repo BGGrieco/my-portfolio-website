@@ -5,6 +5,7 @@ import ProjectCard from "./components/projectCard/default";
 import ExperienceCard from "./components/experienceCard/default";
 import SkillCard from "./components/skillCard/default";
 import AboutCard from "./components/aboutCard/default";
+import ExperienceInfo from "./experience.json";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
           className="marginBottom_med"
           width={2725}
           height={388}
-          priority={true} 
+          priority={true}
         />
 
         <div className="squaresGrid">
@@ -58,41 +59,20 @@ export default function Home() {
           height={333}
         />
 
-        <ExperienceCard
-          title="Shiroi Studio"
-          subtitle="Senior UX/UI Designer"
-          period="09/2023 - Now"
-          alignment="left"
-          imageURL="/shiroi.png"
-        />
-        <ExperienceCard
-          title="The Irish Times"
-          subtitle="UX/UI Designer"
-          period="11/2019 - 03/2023"
-          alignment="right"
-          imageURL="/irishTimes.png"
-        />
-        <ExperienceCard
-          title="MEG Support Tools"
-          subtitle="Head of Design"
-          period="06/2018 - 11/2019"
-          alignment="left"
-          imageURL="/meg.png"
-        />
-        <ExperienceCard
-          title="MEG Support Tools"
-          subtitle="UX/UI Designer"
-          period="12/2017 - 06/2018"
-          alignment="right"
-          imageURL="/meg.png"
-        />
-        <ExperienceCard
-          title="patientMpower"
-          subtitle="UX/UI Designer"
-          period="12/2017 - 11/2019"
-          alignment="left"
-          imageURL="/pMp.png"
-        />
+        {ExperienceInfo.experience.map((item) => (
+          <ExperienceCard
+            title={item.title}
+            subtitle={item.subtitle}
+            period={item.period}
+            alignment={item.alignment}
+            imageURL={item.imageURL}
+            info1={item.info1}
+            info2={item.info2}
+            content1={item.content1}
+            content2={item.content2}
+            linkURL={item.linkURL}
+          />
+        ))}
       </div>
 
       <div id="skillSection" className={styles.skillContainer}>

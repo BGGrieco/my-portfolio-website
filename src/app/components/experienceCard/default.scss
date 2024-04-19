@@ -9,8 +9,11 @@
             order: 1;
         }
 
+        .imgContainer img {
+            left: 0;
+        }
+
         .experienceCard {
-            width: 66.6666666666%;
             order: 2;
         }
     }
@@ -20,11 +23,30 @@
         img {
             display: block;
             height: auto;
-            width: 100%;
+            left: 20%;
+            position: relative;
+            width: 70%;
         }
     }
 
     .experienceCard {
+        a:hover h3 {
+            color: #6f6af8;
+        }
         width: 66.6666666666%;
+    }
+
+    .textContainer {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .experienceContent {
+        opacity: 0.9;
+
+        h4:first-child {
+            padding-right: 24px;
+        }
     }
 }

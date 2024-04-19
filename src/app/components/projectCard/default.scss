@@ -34,6 +34,8 @@
 
     .centerImage {
         display: block;
+        -webkit-filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
         margin: auto;
         position: relative;
         height: auto;
@@ -63,11 +65,15 @@
 
 @keyframes expand {
     0% {
+        -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
         height: auto;
         top: 15%;
         width: 60%;
     }
     100% {
+        -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
         height: auto;
         top: 5%;
         width: 75%;
