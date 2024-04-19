@@ -224,6 +224,10 @@ b {
   padding: 26px 32px 32px 32px;
 }
 
+.opaque {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .buttonContainer {
   display: flex;
   justify-content: space-between;
