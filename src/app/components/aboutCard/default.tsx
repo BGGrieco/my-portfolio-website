@@ -13,11 +13,9 @@ export default function AboutCard() {
         in designing SaaS, B2B, and B2C digital products.
       </h2>
       <h4>
-        I’m currently working with a small and dedicated team at
-        <a href="https://shiroistudio.com/">
-          ShiroiStudio
-        </a>
-        . Feel free to get in touch:
+        I’m currently working with a small and dedicated team at{" "}
+        <a href="https://shiroistudio.com/">ShiroiStudio</a>. Feel free to get
+        in touch:
       </h4>
       <h4>
         I’d love to hear from you, I’m always open to new opportunities and

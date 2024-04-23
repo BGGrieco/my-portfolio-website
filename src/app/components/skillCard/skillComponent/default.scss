@@ -32,24 +32,35 @@
     &.offset .skillName {
         margin: 13px 24px 0 0;
     }
+
+    a:hover h4 {
+        color: #6f6af8;
+    }
 }
 
-.technical .skillTypeContainer {
-    margin: auto;
-    position: relative;
+.technical {
+    .skillTypeContainer {
+        height: 80px;
+        margin: -4px 0 0 0;
+        position: relative;
+        top: -1px;
 
-    img {
-        height: 70px;
-        width: 70px;
-    }
+        .skillName {
+            margin: 11px 0 0 96px;
+        }
 
-    .skillName {
-        left: 0;
-        margin: 13px 0;
-    }
+        img {
+            height: 70px;
+            order: 2;
+            width: 70px;
+        }
 
-    &.offset img {
-        margin: 0 0 0 36px;
-        order: 2;
+        &.offset img {
+            margin-right: 36px;
+        }
+
+        &.offset .skillName {
+            margin: 11px 0 0 24px;
+        }
     }
 }
