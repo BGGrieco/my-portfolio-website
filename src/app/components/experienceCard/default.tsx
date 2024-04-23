@@ -39,9 +39,11 @@ export default function ExperienceCard({
           </h4>
         </div>
       </div>
-      <a className="imgContainer" href={linkURL}>
-        <img src={imageURL}></img>
-      </a>
+      <div className="imgContainer">
+        <a href={linkURL}>
+          <img src={imageURL}></img>
+        </a>
+      </div>
     </div>
   );
 }
