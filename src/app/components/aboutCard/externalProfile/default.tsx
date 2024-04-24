@@ -18,7 +18,7 @@ export default function ExternalProfile({
   return (
     <a
       href={href}
-      className="card externalCard"
+      className="card externalCard opaque"
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
