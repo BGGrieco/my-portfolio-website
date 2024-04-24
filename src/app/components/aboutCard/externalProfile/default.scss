@@ -1,4 +1,8 @@
+@import "../../../animations.scss";
+
 .externalCard {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     box-shadow: none;
     margin: 12px;
     text-decoration: none;
@@ -20,14 +24,5 @@
 
     &:hover .arrow {
         animation: slide 0.3s ease forwards;
-    }
-}
-
-@keyframes slide {
-    from {
-        right: 24px;
-    }
-    to {
-right: 48px;
     }
 }

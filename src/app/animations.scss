@@ -1,0 +1,119 @@
+@keyframes elevate {
+    0% {
+        -webkit-backdrop-filter: blur(8px) saturate(1);
+        backdrop-filter: blur(8px) saturate(1);
+        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(254, 254, 254, 0.2));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        -webkit-backdrop-filter: blur(12px) saturate(5);
+        backdrop-filter: blur(24px) saturate(5);
+        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(254, 254, 254, 0.5));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
+        color: #6f6af8;
+    }
+}
+
+@keyframes colorIt {
+    0% {
+        stroke: rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        stroke: #6f6af8;
+    }
+}
+
+@keyframes slide {
+    from {
+        right: 24px;
+    }
+    to {
+        right: 48px;
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100px;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+        box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+    100% {
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+        height: 95%;
+        margin: 2.5% 0 0 2.5%;
+        width: 95%;
+    }
+}
+
+@keyframes expand {
+    0% {
+        -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        height: auto;
+        top: 15%;
+        width: 60%;
+    }
+    100% {
+        -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        height: auto;
+        top: 5%;
+        width: 75%;
+    }
+}
+
+@keyframes expandSmall {
+    0% {
+        height: auto;
+        top: 15%;
+        width: 40%;
+    }
+    100% {
+        height: auto;
+        top: 5%;
+        width: 50%;
+    }
+}

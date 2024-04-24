@@ -1,3 +1,5 @@
+@import "../../animations.scss";
+
 .navBar {
     padding: 6px 63px;
     position: fixed;
@@ -75,41 +77,5 @@
         li.active .selectorImage {
             animation: appear 0.3s ease forwards;
         }
-    }
-}
-
-@keyframes appear {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-@keyframes disappear {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(0);
-    }
-}
-
-@keyframes slideUp {
-    from {
-        top: -100px;
-    }
-    to {
-        top: 0;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        top: 0;
-    }
-    to {
-        top: -100px;
     }
 }
