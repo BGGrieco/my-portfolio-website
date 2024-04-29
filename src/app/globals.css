@@ -237,6 +237,25 @@ b {
   text-decoration: none;
 }
 
+.button {
+  align-items: center;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(254, 254, 254, 0.2));
+  -webkit-backdrop-filter: blur(8px) saturate(1);
+  backdrop-filter: blur(8px) saturate(1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  width: 500px;
+  padding: 12px 48px;
+  justify-content: space-between;
+
+  svg path {
+    stroke: rgba(0, 0, 0, 0.8);
+  }
+}
+
 .squaresGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));

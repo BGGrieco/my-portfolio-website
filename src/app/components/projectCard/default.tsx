@@ -1,8 +1,8 @@
 import "./default.scss";
 
-export default function ProjectCard({ title, subTitle, imageUrl }) {
+export default function ProjectCard({ title, subTitle, imageUrl, pageUrl }) {
   return (
-    <div className="container">
+    <a href={pageUrl} className="container">
       <div className="card projectCard">
         <span>
           <h3>{title}</h3>
@@ -11,6 +11,6 @@ export default function ProjectCard({ title, subTitle, imageUrl }) {
         <img className="centerImage" src={imageUrl} />
         <img className="arrow" src="/arrow.svg" />
       </div>
-    </div>
+    </a>
   );
 }

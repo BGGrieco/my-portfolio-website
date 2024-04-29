@@ -26,24 +26,28 @@ export default function Home() {
 
         <div className="squaresGrid">
           <ProjectCard
-            title="Wind3 Business"
-            subTitle="Cyber Security Portal"
-            imageUrl="/w3bCTI.png"
-          />
+              title="Wind3 Business"
+              subTitle="Cyber Security Portal"
+              imageUrl="/w3bCTI.png"
+              pageUrl="/cyberpilot"
+            />
           <ProjectCard
             title="Custom Fit"
             subTitle="The Beginning"
             imageUrl="/customFit.png"
+            pageUrl="/cyberpilot"
           />
           <ProjectCard
             title="patientMpower"
             subTitle="Patient app"
             imageUrl="/pMpApp.png"
+            pageUrl="/cyberpilot"
           />
           <ProjectCard
             title="The Irish Times"
             subTitle="Listen"
             imageUrl="/listen.png"
+            pageUrl="/cyberpilot"
           />
         </div>
       </div>
