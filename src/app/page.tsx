@@ -29,25 +29,25 @@ export default function Home() {
               title="Wind3 Business"
               subTitle="Cyber Security Portal"
               imageUrl="/w3bCTI.png"
-              pageUrl="/cyberpilot"
+              pageUrl="/cyberPilot"
             />
           <ProjectCard
             title="Custom Fit"
             subTitle="The Beginning"
             imageUrl="/customFit.png"
-            pageUrl="/cyberpilot"
+            pageUrl="/cyberPilot"
           />
           <ProjectCard
             title="patientMpower"
             subTitle="Patient app"
             imageUrl="/pMpApp.png"
-            pageUrl="/cyberpilot"
+            pageUrl="/cyberPilot"
           />
           <ProjectCard
             title="The Irish Times"
             subTitle="Listen"
             imageUrl="/listen.png"
-            pageUrl="/cyberpilot"
+            pageUrl="/cyberPilot"
           />
         </div>
       </div>

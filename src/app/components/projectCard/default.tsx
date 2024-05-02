@@ -1,8 +1,9 @@
 import "./default.scss";
+import Link from "next/link";
 
 export default function ProjectCard({ title, subTitle, imageUrl, pageUrl }) {
   return (
-    <a href={pageUrl} className="container">
+    <Link href={pageUrl} className="container">
       <div className="card projectCard">
         <span>
           <h3>{title}</h3>
@@ -11,6 +12,6 @@ export default function ProjectCard({ title, subTitle, imageUrl, pageUrl }) {
         <img className="centerImage" src={imageUrl} />
         <img className="arrow" src="/arrow.svg" />
       </div>
-    </a>
+    </Link>
   );
 }
