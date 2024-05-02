@@ -6,21 +6,21 @@ import "./default.scss";
 
 export default function AboutCard() {
   return (
-    <div className="card opaque aboutCard relativelyCentered centeredText fullWidth">
+    <div className="card opaque aboutCard relativelyCentered fullWidth">
       <h1 className="marginBottom_sm">Hi, I'm Brian!</h1>
-      <h2 className="dark marginBottom_sm">
+      <h3 className="marginBottom_sm">
         A UX/UI Designer with good front end skills and six years of experience
         in designing SaaS, B2B, and B2C digital products.
-      </h2>
-      <h4>
+      </h3>
+      <h3 className="marginBottom_sm">
         I’m currently working with a small and dedicated team at{" "}
         <a href="https://shiroistudio.com/">ShiroiStudio</a>. Feel free to get
         in touch:
-      </h4>
-      <h4>
+      </h3>
+      <h3>
         I’d love to hear from you, I’m always open to new opportunities and
         discussions.
-      </h4>
+      </h3>
 
       <div className="buttonContainer marginTop_med marginBottom_med">
         <Button
