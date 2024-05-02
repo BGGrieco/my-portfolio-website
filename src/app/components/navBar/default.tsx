@@ -87,7 +87,7 @@ export default function NavBar() {
 
   return (
     <div className={`active ${show && "display"} navBar`}>
-      <div className="card">
+      <div>
         <ul
           onClick={(event: React.SyntheticEvent) => {
             event.preventDefault();
