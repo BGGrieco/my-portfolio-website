@@ -1,0 +1,29 @@
+.caseContainer {
+    display: inline-flex;
+    height: calc(100vh - 184px);
+    padding: 48px;
+    position: relative;
+    width: 100%;
+
+    .blurbCard {
+        display: block;
+        height: 80%;
+        left: 50%;
+        position: fixed;
+        width: calc(50% - 24px);
+    }
+
+    .words {
+        height: calc(80% - 48px);
+        left: calc(50% + 24px);
+        margin-top: 24px;
+        overflow: scroll;
+        position: fixed;
+        width: calc(50% - 72px);
+    }
+
+    .caseImage {
+        height: auto;
+        width: calc(50% - 24px);
+    }
+}
