@@ -27,7 +27,9 @@ const blerb = (
 export default function ProjectContainer() {
   return (
     <div className="caseContainer">
-      <img className="caseImage" src="/cyberpilotDashboard.png" />
+      <div className="projectImages">
+        <img src="/cyberpilotDashboard.png" />
+      </div>
       <div className="card blurbCard opaque"></div>
       <div className="words">
         <h3 className="marginBottom_xsm">Windtre Business Cyber Pilot</h3>

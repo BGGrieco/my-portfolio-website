@@ -10,7 +10,7 @@
         height: 80%;
         left: 50%;
         position: fixed;
-        width: calc(50% - 24px);
+        width: calc(50% - 48px);
     }
 
     .words {
@@ -22,8 +22,11 @@
         width: calc(50% - 72px);
     }
 
-    .caseImage {
-        height: auto;
+    .projectImages {
         width: calc(50% - 24px);
+
+        img {
+            width: 100%;
+        }
     }
 }
