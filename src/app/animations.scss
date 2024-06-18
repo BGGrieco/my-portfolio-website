@@ -2,16 +2,33 @@
     0% {
         -webkit-backdrop-filter: blur(8px) saturate(1);
         backdrop-filter: blur(8px) saturate(1);
-        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(254, 254, 254, 0.2));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
         color: rgba(0, 0, 0, 0.8);
     }
     100% {
         -webkit-backdrop-filter: blur(24px) saturate(5);
         backdrop-filter: blur(24px) saturate(5);
-        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(254, 254, 254, 0.5));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
         color: #6f6af8;
+    }
+}
+
+@keyframes sink {
+    0% {
+        -webkit-backdrop-filter: blur(24px) saturate(5);
+        backdrop-filter: blur(24px) saturate(5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
+        color: #6f6af8;
+    }
+    100% {
+        -webkit-backdrop-filter: blur(8px) saturate(1);
+        backdrop-filter: blur(8px) saturate(1);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0.8);
     }
 }
 
@@ -20,7 +37,16 @@
         stroke: rgba(0, 0, 0, 0.8);
     }
     100% {
-        stroke: #6f6af8;
+        stroke: rgba(111, 106, 248, 1);
+    }
+}
+
+@keyframes deColorIt {
+    0% {
+        stroke: rgba(111, 106, 248, 1);
+    }
+    100% {
+        stroke: rgba(0, 0, 0, 0.8);
     }
 }
 
@@ -73,7 +99,7 @@
     0% {
         -webkit-backdrop-filter: blur(2px) saturate(1.5);
         backdrop-filter: blur(2px) saturate(1.5);
-        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(253, 253, 253, 0.2));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
         box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.2);
         height: 100%;
         margin: 0;
@@ -82,7 +108,7 @@
     100% {
         -webkit-backdrop-filter: blur(1px) saturate(1.5);
         backdrop-filter: blur(1px) saturate(1.5);
-        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(253, 253, 253, 0.1));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
         box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
         height: 95%;
         margin: 2.5% 0 0 2.5%;
@@ -91,6 +117,27 @@
 }
 
 @keyframes expand {
+    0% {
+        -webkit-backdrop-filter: blur(1px) saturate(1.5);
+        backdrop-filter: blur(1px) saturate(1.5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+        height: 95%;
+        margin: 2.5% 0 0 2.5%;
+        width: 95%;
+    }
+    100% {
+        -webkit-backdrop-filter: blur(2px) saturate(1.5);
+        backdrop-filter: blur(2px) saturate(1.5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
+        box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@keyframes enlarge {
     0% {
         -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
@@ -107,7 +154,24 @@
     }
 }
 
-@keyframes expandSmall {
+@keyframes deflate {
+    0% {
+        -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        height: auto;
+        top: 5%;
+        width: 75%;
+    }
+    100% {
+        -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        height: auto;
+        top: 15%;
+        width: 60%;
+    }
+}
+
+@keyframes enlargeSmall {
     0% {
         height: auto;
         top: 15%;
@@ -117,5 +181,18 @@
         height: auto;
         top: 5%;
         width: 50%;
+    }
+}
+
+@keyframes deflateSmall {
+    0% {
+        height: auto;
+        top: 5%;
+        width: 50%;
+    }
+    100% {
+        height: auto;
+        top: 15%;
+        width: 40%;
     }
 }

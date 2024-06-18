@@ -9,18 +9,27 @@
             height: auto;
             top: 15%;
             width: 40%;
+            animation: deflateSmall 0.2s ease forwards;
         }
 
         &:hover > .projectCard .centerImage {
-            animation: expandSmall 0.2s ease forwards;
+            animation: enlargeSmall 0.2s ease forwards;
         }
+    }
+
+    .centerImage {
+        animation: deflate 0.2s ease forwards;
+    }
+    
+    .projectCard {
+        animation: expand 0.2s ease forwards;
     }
 
     &:hover > .projectCard {
         animation: shrink 0.2s ease forwards;
 
         .centerImage {
-            animation: expand 0.2s ease forwards;
+            animation: enlarge 0.2s ease forwards;
         }
     }
 }

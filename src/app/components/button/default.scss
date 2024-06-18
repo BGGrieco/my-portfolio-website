@@ -1,6 +1,12 @@
 @import "../../animations.scss";
 
 .button {
+    animation: sink 0.3s ease forwards;
+
+    svg path {
+        animation: deColorIt 0.3s ease forwards;
+    }
+
     &:hover {
         animation: elevate 0.3s ease forwards;
 

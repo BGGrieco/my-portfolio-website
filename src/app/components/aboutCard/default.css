@@ -1,1 +1,1 @@
-.aboutCard .squaresGrid::before{padding-bottom:0}.aboutCard .squaresGrid .externalCard:nth-child(odd){margin-left:0}.aboutCard .squaresGrid .externalCard:nth-child(even){margin-right:0}
+.aboutCard{padding:26px 32px 20px 32px}.aboutCard .squaresGrid::before{padding-bottom:0}.aboutCard .squaresGrid .externalCard:nth-child(odd){margin-left:0}.aboutCard .squaresGrid .externalCard:nth-child(even){margin-right:0}
