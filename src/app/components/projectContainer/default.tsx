@@ -1,7 +1,7 @@
 import "./default.scss";
 
 const blerb = (
-  <h4>
+  <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -21,7 +21,7 @@ const blerb = (
     ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
     voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
     eum fugiat quo voluptas nulla pariatur?
-  </h4>
+  </p>
 );
 
 export default function ProjectContainer() {

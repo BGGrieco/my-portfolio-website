@@ -21,7 +21,7 @@
         position: relative;
         width: 240px;
 
-        h4 {
+        p {
             line-height: 22px;
             margin: auto;
         }
@@ -42,7 +42,7 @@
     a:hover {
         animation: elevate 0.3s ease forwards;
 
-        h4 {
+        p {
             color: #6f6af8;
             transition: 0.3s;
         }

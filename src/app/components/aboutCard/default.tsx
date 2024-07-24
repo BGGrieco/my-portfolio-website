@@ -7,9 +7,9 @@ import "./default.scss";
 export default function AboutCard() {
   return (
     <div className="card opaque aboutCard relativelyCentered fullWidth">
-      <h1 className="marginBottom_sm">Hi, I'm Brian!</h1>
+      <h1 className="marginBottom_sm">I'm Brian,</h1>
       <h3 className="marginBottom_sm">
-        A UX/UI Designer with good front end skills and six years of experience
+        A UX/UI Designer with good front end skills and seven years of experience
         in designing SaaS, B2B, and B2C digital products.
       </h3>
       <h3 className="marginBottom_sm">
@@ -36,10 +36,10 @@ export default function AboutCard() {
       </div>
 
       <h3 className="marginTop_med">Thank you for scrolling this far!</h3>
-      <h4>
+      <p>
         If you want to know more, you could check out my profiles on the
         following platforms:
-      </h4>
+      </p>
       <div className="marginTop_med squaresGrid">
         <ExternalProfile
           title="LinkedIn"

@@ -30,6 +30,11 @@
             position: relative;
             left: 40%;
             transition: 0.3s;
+
+            @media screen and (max-width: 1200px) {
+                left: 10%;
+                width: 90%;
+            }
         }
 
         img {
@@ -46,6 +51,10 @@
             filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.4));
             transition: 0.3s;
         }
+
+        @media screen and (max-width: 920px) {
+            display: none;
+        }
     }
 
     .experienceCard {
@@ -54,6 +63,10 @@
         }
 
         width: 66.6666666666%;
+
+        @media screen and (max-width: 920px) {
+            width: 90%;
+        }
     }
 
     .textContainer {
@@ -65,7 +78,7 @@
     .experienceContent {
         opacity: 0.9;
 
-        h4:first-child {
+        p:first-child {
             padding-right: 24px;
         }
     }

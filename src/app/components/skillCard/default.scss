@@ -14,4 +14,20 @@
         text-align: right;
         width: 50%;
     }
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        .creative {
+            border-right: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 24px;
+            padding-right: 0;
+            width: 100%;
+        }
+
+        .technical {
+            padding-top: 24px;
+            width: 100%;
+        }
+    }
 }

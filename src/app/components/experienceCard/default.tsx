@@ -20,23 +20,23 @@ export default function ExperienceCard({
             <a href={linkURL}>
               <h3>{title}</h3>
             </a>
-            <h4 className="marginTop_xsm">
+            <p className="marginTop_xsm">
               <b>{subtitle}</b>
-            </h4>
+            </p>
           </div>
-          <h4>{period}</h4>
+          <p>{period}</p>
         </div>
         <div className="textContainer marginTop_med experienceContent">
-          <h4>
+          <p>
             <b>{info1}</b>
             <br />
             {content1}
-          </h4>
-          <h4>
+          </p>
+          <p>
             <b>{info2}</b>
             <br />
             {content2}
-          </h4>
+          </p>
         </div>
       </div>
       <div className="imgContainer">
