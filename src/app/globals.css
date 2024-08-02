@@ -13,7 +13,7 @@ body {
 body {
   background:
     url("/background.svg"),
-    linear-gradient(to bottom right, #6f6af8, #f86ac8) no-repeat fixed center;
+    linear-gradient(to bottom right, #6f6af8, #ff57c6) no-repeat fixed center;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -74,6 +74,10 @@ b {
 
 .centeredText {
   text-align: center;
+}
+
+.rightText {
+  text-align: right;
 }
 
 .marginBottom_xsm {

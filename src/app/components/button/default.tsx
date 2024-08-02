@@ -5,7 +5,7 @@ export default function Button({ text, svg, href }) {
     <a href={href}>
       <div className="button">
         {svg}
-        <p>{text}</p>
+        {text}
       </div>
     </a>
   );

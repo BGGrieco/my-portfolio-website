@@ -1,6 +1,33 @@
 .aboutCard {
     padding: 26px 32px 20px 32px;
 
+    .textAndButtons {
+        display: flex;
+        flex-direction: column;
+
+        div:first-child {
+            margin: 0 0 24px 0;
+
+            @media screen and (min-width: 980px) {
+                margin: 0 24px 0 0;
+            }
+        }
+
+        @media screen and (min-width: 980px) {
+            flex-direction: row;
+        }
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        margin-top: 0;
+        justify-content: start;
+
+        .button:first-child {
+            margin-bottom: 24px;
+        }
+    }
+
     .squaresGrid {
         &::before {
             padding-bottom: 0;

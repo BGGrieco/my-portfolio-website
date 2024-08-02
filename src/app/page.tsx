@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import WelcomeCard from "./components/welcomeCard/default";
@@ -8,12 +9,26 @@ import AboutCard from "./components/aboutCard/default";
 import ExperienceInfo from "./experience.json";
 
 export default function Home() {
+  // useEffect(() => {
+  //   const [width, setWidth] = useState(window.innerWidth);
+
+  //   window.addEventListener('resize', function(event) {
+  //       setWidth(window.innerWidth);
+  //   }
+
+    // window.addEventListener("resize", onresize);
+  // }, []);
+
   return (
     <main className={styles.main}>
       <WelcomeCard />
 
       <div id="projectsSection">
-        <div id="projects" className="marginBottom_lrg"></div>
+        <div
+          id="projects"
+          // className={width <= 768 ? "marginBottom_lrg" : "marginBottom_sm"}
+          className="marginBottom_lrg"
+        ></div>
         <Image
           src="/projects.png"
           alt="Projects"
@@ -26,11 +41,11 @@ export default function Home() {
 
         <div className="squaresGrid">
           <ProjectCard
-              title="Wind3 Business"
-              subTitle="Cyber Security Portal"
-              imageUrl="/w3bCTI.png"
-              pageUrl="https://www.windtrebusiness.it/grandi-aziende/servizi/cyber-security"
-            />
+            title="Wind3 Business"
+            subTitle="Cyber Security Portal"
+            imageUrl="/w3bCTI.png"
+            pageUrl="https://www.windtrebusiness.it/grandi-aziende/servizi/cyber-security"
+          />
           <ProjectCard
             title="Custom Fit"
             subTitle="The Beginning"

@@ -17,6 +17,7 @@
   }
 
   .card {
+    border-radius: 24px;
     padding: 26px 32px 32px 32px;
   }
 
@@ -59,7 +60,15 @@
   }
 
   .squaresGrid {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(4, calc(80% - 40px));
+    grid-template-rows: minmax(150px, 1fr);
+    overflow: scroll;
+  }
+
+  .card {
+    border-radius: 12px;
   }
 }
 
@@ -73,8 +82,8 @@
   }
 
   h3 {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 32px;
   }
 
   p {

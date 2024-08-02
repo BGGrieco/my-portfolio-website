@@ -7,32 +7,37 @@ import "./default.scss";
 export default function AboutCard() {
   return (
     <div className="card opaque aboutCard relativelyCentered fullWidth">
-      <h1 className="marginBottom_sm">I'm Brian,</h1>
-      <h3 className="marginBottom_sm">
-        A UX/UI Designer with good front end skills and seven years of experience
-        in designing SaaS, B2B, and B2C digital products.
-      </h3>
-      <h3 className="marginBottom_sm">
-        I’m currently working with a small and dedicated team at{" "}
-        <a href="https://shiroistudio.com/">ShiroiStudio</a>. Feel free to get
-        in touch:
-      </h3>
-      <h3>
-        I’d love to hear from you, I’m always open to new opportunities and
-        discussions.
-      </h3>
+      <h2 className="marginBottom_sm">I'm Brian,</h2>
+      <div className="textAndButtons">
+        <div>
+          <p className="marginBottom_sm">
+            A UX/UI Designer with good front end skills and seven years of
+            experience in designing E-commerce, SaaS, B2B, and B2C digital
+            products.
+          </p>
+          <p className="marginBottom_sm">
+            I’m currently working with a small and dedicated team at{" "}
+            <a href="https://shiroistudio.com/">ShiroiStudio</a>. Feel free to
+            get in touch:
+          </p>
+          <p>
+            I’d love to hear from you, I’m always open to new opportunities and
+            discussions.
+          </p>
+        </div>
 
-      <div className="buttonContainer marginTop_med marginBottom_med">
-        <Button
-          href="mailto:brian.g.grieco@gmail.com"
-          svg={<EmailIcon />}
-          text="brian.g.grieco@gmail.com"
-        />
-        <Button
-          href="tel:+393707026255"
-          svg={<PhoneIcon />}
-          text="+39 370 702 6255"
-        />
+        <div className="buttonContainer marginTop_med marginBottom_med">
+          <Button
+            href="mailto:brian.g.grieco@gmail.com"
+            svg={<EmailIcon />}
+            text="brian.g.grieco@gmail.com"
+          />
+          <Button
+            href="tel:+393707026255"
+            svg={<PhoneIcon />}
+            text="+39 370 702 6255"
+          />
+        </div>
       </div>
 
       <h3 className="marginTop_med">Thank you for scrolling this far!</h3>

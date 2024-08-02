@@ -21,9 +21,17 @@
         position: relative;
         width: 240px;
 
+        @media screen and (max-width: 450px) {
+            padding: 12px 24px;
+        }
+
         p {
             line-height: 22px;
             margin: auto;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin: 13px 0 0 0;
         }
     }
 
@@ -33,6 +41,10 @@
 
     &.offset .skillName {
         margin: 13px 24px 0 0;
+
+        @media screen and (max-width: 450px) {
+            margin: 13px 0 0 0;
+        }
     }
 
     a {
@@ -58,6 +70,11 @@
 
         .skillName {
             margin: 11px 0 0 96px;
+
+            @media screen and (max-width: 450px) {
+                left: 0;
+                margin: 11px 12px 0 0;
+            }
         }
 
         img {
@@ -72,6 +89,16 @@
 
         &.offset .skillName {
             margin: 11px 0 0 24px;
+            @media screen and (max-width: 450px) {
+                left: 0;
+                margin: 11px 0 0;
+            }
+        }
+
+        &.offset img {
+            @media screen and (max-width: 450px) {
+                margin-left: 12px;
+            }
         }
     }
 }

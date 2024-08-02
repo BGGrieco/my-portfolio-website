@@ -24,7 +24,7 @@ export default function ExperienceCard({
               <b>{subtitle}</b>
             </p>
           </div>
-          <p>{period}</p>
+          <p className="rightText">{period}</p>
         </div>
         <div className="textContainer marginTop_med experienceContent">
           <p>
