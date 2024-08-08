@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={wSans.className}>
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
         <Footer />
       </body>

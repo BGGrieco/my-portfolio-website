@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
-import WelcomeCard from "./components/welcomeCard/default";
+import Intro from "./components/intro/default";
+import GlassBackground from "./components/glassBackground/default";
+import AuroraBackground from "./components/auroraBackground/default";
 import ProjectCard from "./components/projectCard/default";
 import ExperienceCard from "./components/experienceCard/default";
 import SkillCard from "./components/skillCard/default";
@@ -9,26 +10,24 @@ import AboutCard from "./components/aboutCard/default";
 import ExperienceInfo from "./experience.json";
 
 export default function Home() {
-  // useEffect(() => {
-  //   const [width, setWidth] = useState(window.innerWidth);
-
-  //   window.addEventListener('resize', function(event) {
-  //       setWidth(window.innerWidth);
-  //   }
-
-    // window.addEventListener("resize", onresize);
-  // }, []);
-
   return (
     <main className={styles.main}>
-      <WelcomeCard />
+      <div className="hero"></div>
+
+      <Intro />
+
+      <div className="spacerOne"></div>
+
+      <GlassBackground />
+
+      <div className="spacerTwo"></div>
+
+      <AuroraBackground />
+
+      <div className="spacerTwo"></div>
 
       <div id="projectsSection">
-        <div
-          id="projects"
-          // className={width <= 768 ? "marginBottom_lrg" : "marginBottom_sm"}
-          className="marginBottom_lrg"
-        ></div>
+        <div id="projects" className="marginBottom_lrg"></div>
         <Image
           src="/projects.png"
           alt="Projects"
