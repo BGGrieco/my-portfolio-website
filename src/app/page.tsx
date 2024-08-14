@@ -1,7 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import Intro from "./components/intro/default";
-import GlassBackground from "./components/glassBackground/default";
+import Hero from "./components/hero/default"
+// import Intro from "./components/intro/default";
+// import GlassBackground from "./components/glassBackground/default";
 import AuroraBackground from "./components/auroraBackground/default";
 import ProjectCard from "./components/projectCard/default";
 import ExperienceCard from "./components/experienceCard/default";
@@ -12,15 +13,28 @@ import ExperienceInfo from "./experience.json";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className="hero"></div>
+      {/* <div className="parallaxer">
+        <div className="hero">
+          <Image
+            src="/duomo.jpg"
+            alt="Hero Image"
+            layout="responsive"
+            className="heroImage"
+            width={1620}
+            height={1080}
+            priority={true}
+          />
+        </div>
 
-      <Intro />
+        <Intro />
 
-      <div className="spacerOne"></div>
+        <div className="spacerOne"></div>
 
-      <GlassBackground />
+        <GlassBackground />
 
-      <div className="spacerTwo"></div>
+        <div className="spacerTwo"></div>
+      </div> */}
+      <Hero />
 
       <AuroraBackground />
 

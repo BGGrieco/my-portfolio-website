@@ -10,13 +10,12 @@ body {
   overflow-x: hidden;
 }
 
-body {
+/* body {
   background:
-    radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2)) no-repeat fixed center,
-    url("/duomo.jpg");
+    radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2));
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 
 h2,
 h3,
@@ -65,22 +64,6 @@ span {
 b {
   color: rgba(0, 0, 0, 0.9);
   font-weight: 600;
-}
-
-/* MAIN SECTIONS */
-.hero {
-  height: 100vh;
-  width: 100vw;
-}
-
-.spacerOne {
-  height: calc(100vh - 256px);
-  width: 100vw;
-}
-
-.spacerTwo {
-  height: 110vh;
-  width: 100vw;
 }
 
 /* GLOBAL CLASSES */

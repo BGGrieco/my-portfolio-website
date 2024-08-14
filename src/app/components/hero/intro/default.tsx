@@ -6,7 +6,7 @@ export default function Intro() {
   const [show, setShow] = useState(false);
 
   const controlIntro = () => {
-    if (window.scrollY > 499) {
+    if (window.scrollY > 49) {
       setShow(true);
     } else {
       setShow(false);
