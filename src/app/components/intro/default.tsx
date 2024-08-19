@@ -4,14 +4,13 @@ import "./default.scss";
 
 export default function Intro() {
   const [show, setShow] = useState(false);
-
-  // const controlIntro = () => {
-  //   if (window.scrollY > 49) {
-  //     setShow(true);
-  //   } else {
-  //     setShow(false);
-  //   }
-  // };
+  const controlIntro = () => {
+    if (window.scrollY > 576) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", controlIntro);

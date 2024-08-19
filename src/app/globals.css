@@ -66,6 +66,30 @@ b {
   font-weight: 600;
 }
 
+.feed {
+  z-index: 2;
+}
+
+/* HEADER SPECIFIC STYLING */
+.gradient {
+  background: radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2));
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.spacerOne {
+  height: calc(100vh - 256px);
+  width: 100vw;
+}
+
+.spacerTwo {
+  height: 110vh;
+  width: 100vw;
+}
+
 /* GLOBAL CLASSES */
 .dark {
   color: rgba(0, 0, 0, 0.8);

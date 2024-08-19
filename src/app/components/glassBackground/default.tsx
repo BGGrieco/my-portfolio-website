@@ -6,7 +6,7 @@ export default function GlassBackground() {
   const [show, setShow] = useState(false);
 
   const controlScreen = () => {
-    if (window.scrollY > 1260) {
+    if (window.scrollY > 1408) {
       setShow(true);
     } else {
       setShow(false);

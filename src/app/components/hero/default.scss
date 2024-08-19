@@ -1,49 +1,27 @@
 .parallaxer {
     height: 100vh;
     overflow-x: hidden;
-    // overflow-y: auto;
-
-    .gradient {
-        background: radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2));
-        height: 100vh;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100vw;
-    }
-}
-
-.hero {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    position: relative;
-    transform-style: preserve-3d;
+    overflow-y: auto;
 }
 
 .heroImage {
     animation: parallax ease;
     animation-timeline: scroll();
-    height: 120vh;
+    height: calc(100vh + 256px);
     left: 0;
     position: absolute;
     top: 0;
     width: auto;
-}
 
-.spacerOne {
-    height: calc(100vh - 256px);
-    width: 100vw;
-}
-
-.spacerTwo {
-    height: 110vh;
-    width: 100vw;
+    &.fixed {
+        animation: none;
+        position: fixed;
+        top: -225px;
+    }
 }
 
 @keyframes parallax {
     to {
-        transform: translateY(1200px);
+        transform: translateY(10000px);
     }
 }

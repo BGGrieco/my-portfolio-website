@@ -6,7 +6,7 @@ export default function AuroraBackground() {
   const [show, setShow] = useState(false);
 
   const controlAurora = () => {
-    if (window.scrollY > 2100) {
+    if (window.scrollY > 2320) {
       setShow(true);
     } else {
       setShow(false);
