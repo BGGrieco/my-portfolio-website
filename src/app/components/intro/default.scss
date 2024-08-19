@@ -1,0 +1,17 @@
+#intro {
+    bottom: 0;
+    margin: 64px 64px 64px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+
+    &.fixed {
+        bottom: calc(100vh - 256px);
+        position: fixed;
+    }
+
+    h2 {
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,27 @@
+.parallaxer {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.heroImage {
+    animation: parallax ease;
+    animation-timeline: scroll();
+    height: calc(100vh + 256px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+
+    &.fixed {
+        animation: none;
+        position: fixed;
+        top: -225px;
+    }
+}
+
+@keyframes parallax {
+    to {
+        transform: translateY(10000px);
+    }
+}
