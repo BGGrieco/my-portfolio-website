@@ -196,3 +196,9 @@
         width: 40%;
     }
 }
+
+@keyframes parallax {
+    to {
+        transform: translateY(10000px);
+    }
+}

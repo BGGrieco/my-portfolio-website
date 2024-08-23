@@ -67,6 +67,7 @@ b {
 }
 
 .feed {
+  position: relative;
   z-index: 2;
 }
 
@@ -232,7 +233,12 @@ b {
 
 /* GROUP DECLARATIONS */
 #projectsSection {
-  width: 100%;
+  width: calc(100vw - 96px);
+}
+
+#projectsSection .squaresGrid {
+  margin-left: -24px;
+  width: calc(100% + 48px);
 }
 
 #projects,

@@ -1,3 +1,5 @@
+@import "../../animations.scss";
+
 .parallaxer {
     height: 100vh;
     overflow-x: hidden;
@@ -17,11 +19,5 @@
         animation: none;
         position: fixed;
         top: -225px;
-    }
-}
-
-@keyframes parallax {
-    to {
-        transform: translateY(10000px);
     }
 }

@@ -19,10 +19,10 @@ export default function Home() {
       <div className="spacerOne"></div>
       <GlassBackground />
       <div className="spacerTwo"></div>
-      <AuroraBackground />
-      <div className="spacerTwo"></div>
+      {/* <div className="spacerTwo"></div> */}
       <div className="feed">
-        <div id="projectsSection">
+      <AuroraBackground />
+        <div id="projectsSection" className={styles.section}>
           <div id="projects" className="marginBottom_lrg"></div>
           <Image
             src="/projects.png"
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="experienceSection" className={styles.experienceContainer}>
+        <div id="experienceSection" className={styles.section}>
           <div id="experience" className="marginBottom_lrg"></div>
           <Image
             src="/experience.png"
@@ -89,7 +89,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div id="skillSection" className={styles.skillContainer}>
+        <div id="skillSection" className={styles.section}>
           <div id="skills" className="marginBottom_lrg"></div>
           <Image
             src="/skills.png"
@@ -103,7 +103,7 @@ export default function Home() {
           <SkillCard />
         </div>
 
-        <div id="aboutSection" className={styles.aboutContainer}>
+        <div id="aboutSection" className={styles.section}>
           <div id="about" className="marginBottom_lrg"></div>
           <Image
             src="/about.png"
