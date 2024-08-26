@@ -1,6 +1,6 @@
 @import "../../animations.scss";
 
-.parallaxer {
+.hero {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -18,6 +18,6 @@
     &.fixed {
         animation: none;
         position: fixed;
-        top: -225px;
+        top: -177px;
     }
 }

@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Hero from "./components/hero/default";
 import Intro from "./components/intro/default";
-import GlassBackground from "./components/glassBackground/default";
+import BrokenText from "./components/brokenText/default";
 import AuroraBackground from "./components/auroraBackground/default";
 import ProjectCard from "./components/projectCard/default";
 import ExperienceCard from "./components/experienceCard/default";
@@ -17,9 +17,9 @@ export default function Home() {
       <div className="gradient"></div>
       <Intro />
       <div className="spacerOne"></div>
-      <GlassBackground />
+      <BrokenText />
       <div className="spacerTwo"></div>
-      {/* <div className="spacerTwo"></div> */}
+      <div className="spacerTwo"></div>
       <div className="feed">
       <AuroraBackground />
         <div id="projectsSection" className={styles.section}>

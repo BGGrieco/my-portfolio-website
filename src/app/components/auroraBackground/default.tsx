@@ -1,41 +1,43 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./default.scss";
 
 export default function AuroraBackground() {
-  const [show, setShow] = useState(false);
-  const [filter, setFilter] = useState("blur(80px)");
+  const [opacity, setOpacity] = useState("0");
 
-  function scrollBlur() {
-    let num = 80 - (window.scrollY / window.innerHeight) * 10;
-    return "blur(" + num + "px)";
+  function scrollOpacity() {
+    let num = -1 + (window.scrollY / window.innerHeight) * 0.5;
+    let result: string;
+    if (num > 0.6) {
+      result = "0.6";
+    } else {
+      result = "" + num + "";
+    }
+    return result;
   }
 
   const controlAurora = () => {
-    if (window.scrollY > 2320) {
-      setShow(true);
-      setFilter(scrollBlur());
+    if (window.scrollY > 1408) {
+      setOpacity(scrollOpacity());
+      console.log(opacity);
     } else {
-      setShow(false);
+      setOpacity("0");
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", controlAurora);
-    console.log(filter);
 
     return () => {
       window.removeEventListener("scroll", controlAurora);
     };
   });
 
-  const blur = useRef(null);
-
   return (
-    <div className={`auroraBackground ${show && "fixed"}`}>
+    <div className="auroraBackground" style={{opacity: opacity}}>
       <div className="blueOrb"></div>
       <div className="pinkOrb"></div>
-      <div className="blur" ref={blur} style={{backdropFilter: filter}}></div>
+      <div className="blur" ></div>
     </div>
   );
 }

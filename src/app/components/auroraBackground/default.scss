@@ -1,15 +1,17 @@
 .auroraBackground {
     background: linear-gradient(to bottom right, #6f6af8, #ff57c6);
-    position: absolute;
+    position: fixed;
     height: 100vh;
+    opacity: 0;
     overflow: hidden;
+    top: 0;
     width: 100vw;
     z-index: 2;
 
-    &.fixed {
-        position: fixed;
-        top: 0;
-    }
+    // &.fixed {
+    //     position: fixed;
+    //     top: 0;
+    // }
 
     .blueOrb {
         background: radial-gradient(farthest-corner at 100% 100%, #413e92, #817cff);
@@ -32,8 +34,8 @@
     }
 
     .blur {
-        // -webkit-backdrop-filter: blur(50px);
-        // backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(100px);
+        backdrop-filter: blur(100px);
         content: "";
         display: block;
         height: 100vh;

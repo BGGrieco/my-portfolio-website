@@ -4,11 +4,21 @@ import "./default.scss";
 
 export default function Intro() {
   const [show, setShow] = useState(false);
+  const [opacity, setOpacity] = useState("1");
+
+  function scrollOpacity() {
+    let num = 2 - (window.scrollY / window.innerHeight) * 0.7;
+    return "" + num + "";
+  }
+
   const controlIntro = () => {
-    if (window.scrollY > 576) {
+    if (window.scrollY > 576 && window.scrollY < 1408) {
       setShow(true);
+    } else if (window.scrollY > 1408) {
+      setOpacity(scrollOpacity());
     } else {
       setShow(false);
+      setOpacity("1");
     }
   };
 
@@ -21,7 +31,11 @@ export default function Intro() {
   });
 
   return (
-    <div id="intro" className={`${show && "fixed"}`}>
+    <div
+      id="intro"
+      className={`${show && "fixed"}`}
+      style={{ opacity: opacity }}
+    >
       <h1>Brian G. Grieco</h1>
       <h2>UX Research | UI Design | Front-end Dev</h2>
     </div>
