@@ -30,7 +30,7 @@ export default function ProjectContainer() {
       <div className="projectImages">
         <img src="/cyberpilotDashboard.png" />
       </div>
-      <div className="card blurbCard opaque"></div>
+      <div className="card blurbCard"></div>
       <div className="words">
         <h3 className="marginBottom_xsm">Windtre Business Cyber Pilot</h3>
         {blerb}

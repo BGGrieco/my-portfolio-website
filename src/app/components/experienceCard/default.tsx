@@ -14,7 +14,7 @@ export default function ExperienceCard({
 }) {
   return (
     <div className={`experienceContainer marginBottom_med ${alignment}`}>
-      <div className="card opaque experienceCard">
+      <div className="card experienceCard">
         <div className="textContainer">
           <div>
             <a href={linkURL}>

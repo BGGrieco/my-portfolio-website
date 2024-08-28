@@ -7,13 +7,14 @@ export default function Intro() {
   const [opacity, setOpacity] = useState("1");
 
   function scrollOpacity() {
-    let num = 2 - (window.scrollY / window.innerHeight) * 0.7;
+    let num = 2 - (window.scrollY / window.innerHeight) * 0.6;
     return "" + num + "";
   }
 
   const controlIntro = () => {
     if (window.scrollY > 576 && window.scrollY < 1408) {
       setShow(true);
+      setOpacity("1");
     } else if (window.scrollY > 1408) {
       setOpacity(scrollOpacity());
     } else {

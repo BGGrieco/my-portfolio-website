@@ -19,7 +19,6 @@ export default function AuroraBackground() {
   const controlAurora = () => {
     if (window.scrollY > 1408) {
       setOpacity(scrollOpacity());
-      console.log(opacity);
     } else {
       setOpacity("0");
     }
