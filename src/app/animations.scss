@@ -50,12 +50,21 @@
     }
 }
 
-@keyframes slide {
+@keyframes slideLeft {
     from {
         right: 24px;
     }
     to {
         right: 48px;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        right: 48px;
+    }
+    to {
+        right: 24px;
     }
 }
 
@@ -116,12 +125,33 @@
     }
 }
 
+@keyframes shrinkSmallScreen {
+    0% {
+        -webkit-backdrop-filter: blur(8px) saturate(3);
+        backdrop-filter: blur(8px) saturate(3);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.4);
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+    100% {
+        -webkit-backdrop-filter: blur(4px) saturate(2.5);
+        backdrop-filter: blur(4px) saturate(2.5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+        height: 95%;
+        margin: 2.5% 0 0 2.5%;
+        width: 95%;
+    }
+}
+
 @keyframes expand {
     0% {
         -webkit-backdrop-filter: blur(4px) saturate(2.5);
         backdrop-filter: blur(4px) saturate(2.5);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
-        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
         height: 95%;
         margin: 2.5% 0 0 2.5%;
         width: 95%;
@@ -130,7 +160,7 @@
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
-        box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.6);
+        box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.6);
         height: 100%;
         margin: 0;
         width: 100%;

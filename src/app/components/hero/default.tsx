@@ -7,6 +7,7 @@ import "./default.scss";
 export default function Hero() {
   const [show, setShow] = useState(false);
   const [blur, setBlur] = useState("blur(0)");
+  const scrollNumber = window.innerHeight - 282;
 
   function scrollBlur() {
     let num = -1 + (window.scrollY / window.innerHeight) * 2;
@@ -20,7 +21,7 @@ export default function Hero() {
   }
 
   const controlHero = () => {
-    if (window.scrollY > 576) {
+    if (window.scrollY > scrollNumber) {
       setShow(true);
       setBlur(scrollBlur());
     } else {

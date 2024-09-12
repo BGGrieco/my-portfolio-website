@@ -8,6 +8,16 @@
   width: 100vw;
 }
 
+.overlay {
+  -webkit-backdrop-filter: blur(16px) saturate(0.3);
+    backdrop-filter: blur(16px) saturate(0.3);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 4;
+}
+
 .section {
   display: inline-block;
   margin: 0 48px;
@@ -16,6 +26,6 @@
   z-index: 3;
 
   @media screen and (max-width: 680px) {
-      padding: 0 24px;
-    }
+    margin: 0 24px;
+  }
 }

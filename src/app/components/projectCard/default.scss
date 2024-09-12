@@ -23,10 +23,26 @@
 
     .projectCard {
         animation: expand 0.2s ease forwards;
+
+        p {
+            margin-top: 12px;
+            
+            @media screen and (max-width: 1200px) {
+                margin-top: 0;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            animation: expandSmallScreen 0.2s ease forwards;
+        }
     }
 
     &:hover > .projectCard {
         animation: shrink 0.2s ease forwards;
+
+        @media screen and (max-width: 680px) {
+            animation: shrinkSmallScreen 0.2s ease forwards;
+        }
 
         .centerImage {
             animation: enlarge 0.2s ease forwards;

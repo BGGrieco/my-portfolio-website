@@ -4,7 +4,7 @@
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 36px;
   }
 
   h3 {
@@ -14,6 +14,7 @@
 
   p {
     font-size: 22px;
+    line-height: 28px;
   }
 
   .spacerOne {
@@ -52,7 +53,7 @@
 
   p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 24px;
   }
 
   .squaresGrid {
@@ -76,7 +77,7 @@
   }
 
   h2 {
-    font-size: 1.45em;
+    font-size: 26px;
   }
 
   h3 {
@@ -86,10 +87,84 @@
 
   p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 21px;
+  }
+
+  .marginBottom_xsm {
+    margin-bottom: 8px;
+  }
+
+  .marginBottom_sm {
+    margin-bottom: 12px;
+  }
+
+  .marginBottom_med {
+    margin-bottom: 24px;
+  }
+
+  .marginBottom_lrg {
+    margin-bottom: 64px;
+  }
+
+  .marginTop_xsm {
+    margin-top: 8px;
+  }
+
+  .marginTop_sm {
+    margin-top: 12px;
+  }
+
+  .marginTop_med {
+    margin-top: 24px;
+  }
+
+  .marginTop_lrg {
+    margin-top: 64px;
   }
 
   .spacerOne {
     height: calc(100vh - 230px);
+  }
+
+  #projectsSection {
+    width: calc(100vw - 48px);
+  }
+
+  #projectsSection .squaresGrid {
+    margin: -24px 0 -48px -48px;
+    padding: 24px 48px;
+    width: calc(100vw + 48px);
+  }
+
+  .card {
+    box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.6);
+    padding: 18px 24px 24px 24px;
+  }
+
+  .arrow {
+    bottom: 12px;
+    width: 24px;
+  }
+
+  .rightText {
+    margin: 4px 0 0 4px;
+  }
+
+  #projects,
+  #experience,
+  #skills,
+  #about {
+    height: auto;
+  }
+
+  #skillSection,
+  #aboutSection {
+    width: calc(100% - 48px);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 3em;
   }
 }
