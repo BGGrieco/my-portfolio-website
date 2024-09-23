@@ -6,6 +6,7 @@
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
         color: rgba(0, 0, 0, 0.8);
     }
+
     100% {
         -webkit-backdrop-filter: blur(24px) saturate(5);
         backdrop-filter: blur(24px) saturate(5);
@@ -23,6 +24,7 @@
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
         color: #6f6af8;
     }
+
     100% {
         -webkit-backdrop-filter: blur(8px) saturate(1);
         backdrop-filter: blur(8px) saturate(1);
@@ -36,6 +38,7 @@
     0% {
         stroke: rgba(0, 0, 0, 0.8);
     }
+
     100% {
         stroke: rgba(111, 106, 248, 1);
     }
@@ -45,6 +48,7 @@
     0% {
         stroke: rgba(111, 106, 248, 1);
     }
+
     100% {
         stroke: rgba(0, 0, 0, 0.8);
     }
@@ -54,6 +58,7 @@
     from {
         right: 24px;
     }
+
     to {
         right: 48px;
     }
@@ -63,6 +68,7 @@
     from {
         right: 48px;
     }
+
     to {
         right: 24px;
     }
@@ -72,6 +78,7 @@
     from {
         transform: scale(0);
     }
+
     to {
         transform: scale(1);
     }
@@ -81,6 +88,7 @@
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(0);
     }
@@ -90,6 +98,7 @@
     from {
         top: -100px;
     }
+
     to {
         top: -1px;
     }
@@ -99,6 +108,7 @@
     from {
         top: 0;
     }
+
     to {
         top: -100px;
     }
@@ -114,6 +124,7 @@
         margin: 0;
         width: 100%;
     }
+
     100% {
         -webkit-backdrop-filter: blur(4px) saturate(2.5);
         backdrop-filter: blur(4px) saturate(2.5);
@@ -135,6 +146,7 @@
         margin: 0;
         width: 100%;
     }
+
     100% {
         -webkit-backdrop-filter: blur(4px) saturate(2.5);
         backdrop-filter: blur(4px) saturate(2.5);
@@ -156,6 +168,7 @@
         margin: 2.5% 0 0 2.5%;
         width: 95%;
     }
+
     100% {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
@@ -175,6 +188,7 @@
         top: 15%;
         width: 60%;
     }
+
     100% {
         -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
         filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
@@ -192,6 +206,7 @@
         top: 5%;
         width: 75%;
     }
+
     100% {
         -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
@@ -207,6 +222,7 @@
         top: 15%;
         width: 40%;
     }
+
     100% {
         height: auto;
         top: 5%;
@@ -220,6 +236,7 @@
         top: 5%;
         width: 50%;
     }
+
     100% {
         height: auto;
         top: 15%;
@@ -230,5 +247,65 @@
 @keyframes parallax {
     to {
         transform: translateY(10000px);
+    }
+}
+
+@keyframes closeOverlay {
+    0% {
+        -webkit-backdrop-filter: blur(16px) saturate(0.3);
+        backdrop-filter: blur(16px) saturate(0.3);
+        display: block;
+    }
+
+    99% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: block;
+    }
+
+    100% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: none;
+    }
+}
+
+@keyframes openOverlay {
+    0% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: none;
+    }
+
+    1% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: block;
+    }
+
+    100% {
+        -webkit-backdrop-filter: blur(16px) saturate(0.3);
+        backdrop-filter: blur(16px) saturate(0.3);
+        display: block;
+    }
+}
+
+@keyframes closeRight {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+@keyframes openRight {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0;
     }
 }

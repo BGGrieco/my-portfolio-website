@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import NavBar from "./components/navBar/default";
 import Footer from "./components/footer/default";
-import "./globals.css";
-import "./responsive.css";
+import "./globals.scss";
+import "./responsive.scss";
 
 const wSans = Work_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {

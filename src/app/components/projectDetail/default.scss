@@ -1,4 +1,7 @@
+@import "../../animations.scss";
+
 .projectDetail {
+    animation: closeRight 0.3s ease forwards;
     -webkit-backdrop-filter: blur(16px) saturate(0.3);
     backdrop-filter: blur(16px) saturate(0.3);
     border-radius: 0;
@@ -10,6 +13,31 @@
     width: 60vw;
     z-index: 4;
 
+    &.open {
+        animation: openRight 0.3s ease forwards;
+    }
+
+    .closeButton {
+        background-color: rgba(255, 255, 255, 0);
+        background-image: url("/arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 52px;
+        position: absolute;
+        right: -12px;
+        top: 0;
+        transition: 0.2s;
+        transform: scaleX(-1);
+        width: 52px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transition: 0.2s;
+        }
+    }
+
     .detailImage {
         margin: -42px -48px 32px -48px;
         width: calc(100% + 96px);
@@ -17,12 +45,5 @@
 
     .detailWords {
         position: relative;
-    }
-
-    .arrow {
-        position: absolute;
-        right: -12px;
-        top: 0;
-        transform: scaleX(-1);
     }
 }

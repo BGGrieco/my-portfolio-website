@@ -1,6 +1,7 @@
 {
   "experience": [
     {
+      "id": 0,
       "title": "Shiroi Studio",
       "subtitle": "Senior UX/UI Designer",
       "period": "09/2023 - Now",
@@ -13,6 +14,7 @@
       "linkURL": "https://shiroistudio.com/"
     },
     {
+      "id": 1,
       "title": "The Irish Times",
       "subtitle": "UX/UI Designer",
       "period": "11/2019 - 03/2023",
@@ -25,6 +27,7 @@
       "linkURL": "https://www.irishtimes.com/"
     },
     {
+      "id": 2,
       "title": "MEG Support Tools",
       "subtitle": "Head of Design",
       "period": "06/2018 - 11/2019",
@@ -37,6 +40,7 @@
       "linkURL": "https://megit.com/"
     },
     {
+      "id": 3,
       "title": "MEG Support Tools",
       "subtitle": "UX/UI Designer",
       "period": "12/2017 - 06/2018",
@@ -49,6 +53,7 @@
       "linkURL": "https://megit.com/"
     },
     {
+      "id": 4,
       "title": "patientMpower",
       "subtitle": "UX/UI Designer",
       "period": "12/2017 - 11/2019",

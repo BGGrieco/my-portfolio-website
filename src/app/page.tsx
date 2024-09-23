@@ -1,4 +1,5 @@
-import styles from "./page.module.css";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Hero from "./components/hero/default";
 import Intro from "./components/intro/default";
@@ -12,8 +13,15 @@ import ExperienceInfo from "./experience.json";
 import ProjectDetail from "./components/projectDetail/default";
 
 export default function Home() {
+
+  const [open, setOpen] = useState(false);
+
+  const handleProjectClick = event => {
+    setOpen(current => !current);
+  };
+
   return (
-    <main className={styles.main}>
+    <main className={`main ${open ? 'noScroll' : ''}`}>
       <Hero />
       <div className="gradient"></div>
       <Intro />
@@ -21,16 +29,21 @@ export default function Home() {
       <BrokenText />
       <div className="spacerTwo"></div>
       <div className="spacerTwo"></div>
+
       <div className="feed">
         <AuroraBackground />
-        <div className={styles.overlay}></div>
+
+        <div className={`overlay ${open ? 'overlayOpen' : ''}`} onClick={handleProjectClick}></div>
+
         <ProjectDetail
+          className={`card projectDetail ${open ? 'open' : ''}`}
           title="Windtre Business"
           subTitle="Cyber Security Portal"
           imageUrl="/cyberPilotDashboard.png"
           blurb="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
         />
-        <div id="projectsSection" className={styles.section}>
+
+        <div id="projectsSection" className="section">
           <div id="projects" className="marginBottom_lrg"></div>
           <Image
             src="/projects.png"
@@ -43,34 +56,38 @@ export default function Home() {
           />
 
           <div className="squaresGrid">
-            <ProjectCard
-              title="Wind3 Business"
-              subTitle="Cyber Security Portal"
-              imageUrl="/w3bCTI.png"
-              pageUrl="https://www.windtrebusiness.it/grandi-aziende/servizi/cyber-security"
-            />
-            <ProjectCard
-              title="Custom Fit"
-              subTitle="The Beginning"
-              imageUrl="/customFit.png"
-              pageUrl="https://github.com/BGGrieco/CustomFit"
-            />
-            <ProjectCard
-              title="patientMpower"
-              subTitle="Patient app"
-              imageUrl="/pMpApp.png"
-              pageUrl="https://play.google.com/store/apps/details?id=com.maithu.transplantbuddy&hl=en_IE&pli=1"
-            />
-            <ProjectCard
-              title="The Irish Times"
-              subTitle="Listen"
-              imageUrl="/listen.png"
-              pageUrl="https://www.irishtimes.com/listen/"
-            />
+            <div className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="Wind3 Business"
+                subTitle="Cyber Security Portal"
+                imageUrl="/w3bCTI.png"
+              />
+            </div>
+            <div className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="Custom Fit"
+                subTitle="The Beginning"
+                imageUrl="/customFit.png"
+              />
+            </div>
+            <div className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="patientMpower"
+                subTitle="Patient app"
+                imageUrl="/pMpApp.png"
+              />
+            </div>
+            <div className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="The Irish Times"
+                subTitle="Listen"
+                imageUrl="/listen.png"
+              />
+            </div>
           </div>
         </div>
 
-        <div id="experienceSection" className={styles.section}>
+        <div id="experienceSection" className="section">
           <div id="experience" className="marginBottom_lrg"></div>
           <Image
             src="/experience.png"
@@ -83,6 +100,7 @@ export default function Home() {
 
           {ExperienceInfo.experience.map((item) => (
             <ExperienceCard
+              key={item.id}
               title={item.title}
               subtitle={item.subtitle}
               period={item.period}
@@ -97,7 +115,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div id="skillSection" className={styles.section}>
+        <div id="skillSection" className="section">
           <div id="skills" className="marginBottom_lrg"></div>
           <Image
             src="/skills.png"
@@ -111,7 +129,7 @@ export default function Home() {
           <SkillCard />
         </div>
 
-        <div id="aboutSection" className={styles.section}>
+        <div id="aboutSection" className="section">
           <div id="about" className="marginBottom_lrg"></div>
           <Image
             src="/about.png"
