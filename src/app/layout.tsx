@@ -8,7 +8,7 @@ import "./responsive.scss";
 const wSans = Work_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   openGraph: {
-    title: "Brian Grieco UX",
+    title: "Brian G. Grieco | Digital Consulting | UX Research",
     description:
       "Official website of UX Researcher, UI Designer, and Front-end Developer Brian Grieco.",
     url: "https://bggrieco.github.io/",

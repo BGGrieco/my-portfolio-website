@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Hero from "./components/hero/default";
 import Intro from "./components/intro/default";
@@ -12,12 +12,34 @@ import AboutCard from "./components/aboutCard/default";
 import ProjectDetail from "./components/projectDetail/default";
 import ProjecstInfo from "./projects.json";
 import ExperienceInfo from "./experience.json";
-import { NEXT_PROJECT_ROOT_DIST } from "next/dist/build/webpack-config";
 
 export default function Home() {
 
   const [projectContent, setProjectContent] = useState(ProjecstInfo.cyberPilot);
   const [open, setOpen] = useState(false);
+  const [opacity, setOpacity] = useState("1");
+
+  function scrollmainOpacity() {
+    let num = 1 - (window.scrollY / window.innerHeight);
+    let result = "" + num + "";
+    return result;
+  }
+
+  const controlIndicator = () => {
+    if (window.scrollY > 0) {
+      setOpacity(scrollmainOpacity());
+    } else {
+      setOpacity("1");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlIndicator);
+
+    return () => {
+      window.removeEventListener("scroll", controlIndicator);
+    };
+  });
 
   const handleProjectClick = (event) => {
     const value = event.currentTarget.getAttribute("id");
@@ -51,6 +73,7 @@ export default function Home() {
     <main className={`main ${open ? 'noScroll' : ''}`}>
       <Hero />
       <div className="gradient"></div>
+      <div className="scrollIndicator" style={{opacity: opacity}}></div>
       <Intro />
       <div className="spacerOne"></div>
       <BrokenText />
@@ -65,6 +88,7 @@ export default function Home() {
         <ProjectDetail
           className={`card projectDetail ${open ? 'open' : ''}`}
           imageUrl={projectContent.imageURL}
+          onClick={handleProjectClick}
           title={projectContent.title}
           subTitle={projectContent.subtitle}
           entities={projectContent.entities}
@@ -90,29 +114,29 @@ export default function Home() {
           <div className="squaresGrid">
             <div id="firstCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
-                title="Wind3 Business"
+                title="CyberPilot"
                 subTitle="Cyber Security Portal"
                 imageUrl="/w3bCTI.png"
               />
             </div>
             <div id="secondCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
-                title="Custom Fit"
-                subTitle="The Beginning"
+                title="Brembo"
+                subTitle="North America E-Commerce"
                 imageUrl="/customFit.png"
               />
             </div>
             <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
-                title="patientMpower"
-                subTitle="Patient app"
+                title="WindTre Business"
+                subTitle="Client Area"
                 imageUrl="/pMpApp.png"
               />
             </div>
             <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
-                title="The Irish Times"
-                subTitle="Listen"
+                title="Unifarco"
+                subTitle="Design System"
                 imageUrl="/listen.png"
               />
             </div>

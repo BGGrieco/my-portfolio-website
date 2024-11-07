@@ -55,7 +55,6 @@ export default function Hero() {
         priority={true}
         ref={headerImageRef}
       />
-
       <Intro />
     </div>
   );

@@ -309,3 +309,23 @@
         right: 0;
     }
 }
+
+@keyframes closeDown {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes openUp {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: 0;
+    }
+}

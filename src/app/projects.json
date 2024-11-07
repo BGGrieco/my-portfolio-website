@@ -11,7 +11,7 @@
         "role": "Team Lead, Senior UX/UI"
     },
     "brembo": {
-        "imageURL": "/w3bCTI.png",
+        "imageURL": "/bremboProj.png",
         "title": "Brembo",
         "subtitle": "North America E-Commerce",
         "entities": "AKQA, Shiroi Studio",
@@ -22,7 +22,7 @@
         "role": "Senior UX Researcher"
     },
     "areaClienti": {
-        "imageURL": "/w3bCTI.png",
+        "imageURL": "/windTreProj.png",
         "title": "WindTre Business",
         "subtitle": "Re-design Area Clienti",
         "entities": "Jakala, Shiroi Studio",
@@ -33,7 +33,7 @@
         "role": "Team Lead, Senior UX/UI"
     },
     "unifarco": {
-        "imageURL": "/w3bCTI.png",
+        "imageURL": "/unifarcoProj.png",
         "title": "Unifarco",
         "subtitle": "Design System",
         "entities": "Shiroi Studio",

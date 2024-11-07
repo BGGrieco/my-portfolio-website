@@ -17,6 +17,19 @@
         animation: openRight 0.3s ease forwards;
     }
 
+    @media screen and (max-width: 820px) {
+        width: 80vw;
+    }
+
+    @media screen and (max-width: 680px) {
+        animation: closeDown 0.3s ease forwards;
+        width: 100%;
+
+        &.open {
+            animation: openUp 0.3s ease forwards;
+        }
+    }
+
     .closeButton {
         background-color: rgba(255, 255, 255, 0);
         background-image: url("/arrow.svg");
@@ -35,6 +48,13 @@
         &:hover {
             background-color: rgba(255, 255, 255, 0.4);
             transition: 0.2s;
+        }
+
+        @media screen and (max-width: 680px) {
+            background-size: 32px 32px;
+            height: 48px;
+            transform: rotate(90deg);
+            width: 48px;
         }
     }
 
