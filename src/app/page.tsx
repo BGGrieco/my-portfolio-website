@@ -20,7 +20,7 @@ export default function Home() {
   const [opacity, setOpacity] = useState("1");
 
   function scrollmainOpacity() {
-    let num = 1 - (window.scrollY / window.innerHeight);
+    let num = 1 - (window.scrollY / 50);
     let result = "" + num + "";
     return result;
   }
