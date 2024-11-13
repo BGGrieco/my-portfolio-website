@@ -1,0 +1,8 @@
+.loadingScreen {
+    animation: fadeLoadingScreen 5s ease forwards;
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}

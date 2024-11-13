@@ -15,6 +15,10 @@ import ExperienceInfo from "./experience.json";
 
 export default function Home() {
 
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   const [projectContent, setProjectContent] = useState(ProjecstInfo.cyberPilot);
   const [open, setOpen] = useState(false);
   const [opacity, setOpacity] = useState("1");
@@ -43,24 +47,24 @@ export default function Home() {
 
   const handleProjectClick = (event) => {
     const value = event.currentTarget.getAttribute("id");
-    
+
     switch (value) {
       case "firstCard": {
         setProjectContent(ProjecstInfo.cyberPilot);
       }
-      break;
+        break;
       case "secondCard": {
         setProjectContent(ProjecstInfo.brembo);
       }
-      break;
+        break;
       case "thirdCard": {
         setProjectContent(ProjecstInfo.areaClienti);
       }
-      break;
+        break;
       case "fourthCard": {
         setProjectContent(ProjecstInfo.unifarco);
       }
-      break;
+        break;
       default: {
         console.log("No Card");
       }
@@ -73,7 +77,7 @@ export default function Home() {
     <main className={`main ${open ? 'noScroll' : ''}`}>
       <Hero />
       <div className="gradient"></div>
-      <div className="scrollIndicator" style={{opacity: opacity}}></div>
+      <div className="scrollIndicator" style={{ opacity: opacity }}></div>
       <Intro />
       <div className="spacerOne"></div>
       <BrokenText />

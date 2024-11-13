@@ -1,5 +1,20 @@
-@keyframes elevate {
+@keyframes fadeLoadingScreen {
     0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes elevate {
+    from {
         -webkit-backdrop-filter: blur(8px) saturate(1);
         backdrop-filter: blur(8px) saturate(1);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
@@ -7,7 +22,7 @@
         color: rgba(0, 0, 0, 0.8);
     }
 
-    100% {
+    to {
         -webkit-backdrop-filter: blur(24px) saturate(5);
         backdrop-filter: blur(24px) saturate(5);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
@@ -17,7 +32,7 @@
 }
 
 @keyframes sink {
-    0% {
+    from {
         -webkit-backdrop-filter: blur(24px) saturate(5);
         backdrop-filter: blur(24px) saturate(5);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
@@ -25,7 +40,7 @@
         color: #6f6af8;
     }
 
-    100% {
+    to {
         -webkit-backdrop-filter: blur(8px) saturate(1);
         backdrop-filter: blur(8px) saturate(1);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
@@ -35,21 +50,21 @@
 }
 
 @keyframes colorIt {
-    0% {
+    from {
         stroke: rgba(0, 0, 0, 0.8);
     }
 
-    100% {
+    to {
         stroke: rgba(111, 106, 248, 1);
     }
 }
 
 @keyframes deColorIt {
-    0% {
+    from {
         stroke: rgba(111, 106, 248, 1);
     }
 
-    100% {
+    to {
         stroke: rgba(0, 0, 0, 0.8);
     }
 }
@@ -115,7 +130,7 @@
 }
 
 @keyframes shrink {
-    0% {
+    from {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
@@ -125,7 +140,7 @@
         width: 100%;
     }
 
-    100% {
+    to {
         -webkit-backdrop-filter: blur(4px) saturate(2.5);
         backdrop-filter: blur(4px) saturate(2.5);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
@@ -137,7 +152,7 @@
 }
 
 @keyframes shrinkSmallScreen {
-    0% {
+    from {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
@@ -147,7 +162,7 @@
         width: 100%;
     }
 
-    100% {
+    to {
         -webkit-backdrop-filter: blur(4px) saturate(2.5);
         backdrop-filter: blur(4px) saturate(2.5);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
@@ -159,7 +174,7 @@
 }
 
 @keyframes expand {
-    0% {
+    from {
         -webkit-backdrop-filter: blur(4px) saturate(2.5);
         backdrop-filter: blur(4px) saturate(2.5);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
@@ -169,7 +184,7 @@
         width: 95%;
     }
 
-    100% {
+    to {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
         background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
@@ -181,7 +196,7 @@
 }
 
 @keyframes enlarge {
-    0% {
+    from {
         -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
         height: auto;
@@ -189,7 +204,7 @@
         width: 60%;
     }
 
-    100% {
+    to {
         -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
         filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
         height: auto;
@@ -199,7 +214,7 @@
 }
 
 @keyframes deflate {
-    0% {
+    from {
         -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
         filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
         height: auto;
@@ -207,7 +222,7 @@
         width: 75%;
     }
 
-    100% {
+    to {
         -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
         height: auto;
@@ -217,13 +232,13 @@
 }
 
 @keyframes enlargeSmall {
-    0% {
+    from {
         height: auto;
         top: 15%;
         width: 40%;
     }
 
-    100% {
+    to {
         height: auto;
         top: 5%;
         width: 50%;
@@ -231,13 +246,13 @@
 }
 
 @keyframes deflateSmall {
-    0% {
+    from {
         height: auto;
         top: 5%;
         width: 50%;
     }
 
-    100% {
+    to {
         height: auto;
         top: 15%;
         width: 40%;

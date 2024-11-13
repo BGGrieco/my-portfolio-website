@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
+import LoadingScreen from "./components/loadingScreen/default";
 import NavBar from "./components/navBar/default";
 import Footer from "./components/footer/default";
 import "./globals.scss";
@@ -52,6 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={wSans.className}>
+        <LoadingScreen />
         {/* <NavBar /> */}
         {children}
         <Footer />
