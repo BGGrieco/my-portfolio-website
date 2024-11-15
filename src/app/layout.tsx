@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
+import LoadingScreen from "./components/loadingScreen/default";
 import NavBar from "./components/navBar/default";
 import Footer from "./components/footer/default";
-import "./globals.css";
-import "./responsive.css";
+import "./globals.scss";
+import "./responsive.scss";
 
 const wSans = Work_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   openGraph: {
-    title: "Brian Grieco UX",
+    title: "Brian G. Grieco | Digital Consulting | UX Research",
     description:
       "Official website of UX Researcher, UI Designer, and Front-end Developer Brian Grieco.",
     url: "https://bggrieco.github.io/",
@@ -52,6 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={wSans.className}>
+        <LoadingScreen />
         {/* <NavBar /> */}
         {children}
         <Footer />

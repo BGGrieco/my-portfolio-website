@@ -6,7 +6,7 @@ import "./default.scss";
 
 export default function AboutCard() {
   return (
-    <div className="card opaque aboutCard relativelyCentered fullWidth">
+    <div className="card aboutCard relativelyCentered fullWidth">
       <h2 className="marginBottom_sm">I'm Brian,</h2>
       <div className="textAndButtons">
         <div>

@@ -13,6 +13,7 @@
     }
 
     .skillName {
+        border-radius: 25px;
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
         height: 48px;
         left: 12px;
@@ -70,6 +71,10 @@
 
         .skillName {
             margin: 11px 0 0 96px;
+
+            @media screen and (min-width: 450px) and (max-width: 540px) {
+                left: -12px;
+            }
 
             @media screen and (max-width: 450px) {
                 left: 0;

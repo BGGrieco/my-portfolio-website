@@ -5,7 +5,7 @@ export default function SkillCard() {
   return (
     <div className="skillCard card relativelyCentered fullWidth">
       <div className="creative">
-        <h3 className="marginBottom_sm">CREATIVE</h3>
+        <h2 className="marginBottom_sm">CREATIVE</h2>
         <SkillComponent
           name="Figma"
           alignment=""
@@ -42,7 +42,7 @@ export default function SkillCard() {
         />
       </div>
       <div className="technical">
-        <h3 className="marginBottom_sm">TECHNICAL</h3>
+        <h2 className="marginBottom_sm">TECHNICAL</h2>
         <SkillComponent
           name="SCSS"
           alignment=""

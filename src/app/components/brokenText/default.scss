@@ -1,8 +1,6 @@
-.heroScreen {
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
+.brokenTextContainer {
     height: 100vh;
+    position: relative;
     width: 100vw;
 
     &.fixed {
@@ -12,7 +10,7 @@
   
   .brokenText {
     bottom: 0;
-    margin: 64px;
+    padding: 64px;
     position: absolute;
   }
   

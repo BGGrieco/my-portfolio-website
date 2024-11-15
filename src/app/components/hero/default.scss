@@ -1,6 +1,4 @@
-@import "../../animations.scss";
-
-.parallaxer {
+.hero {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -9,7 +7,7 @@
 .heroImage {
     animation: parallax ease;
     animation-timeline: scroll();
-    height: calc(100vh + 256px);
+    height: calc(100vh + 281px);
     left: 0;
     position: absolute;
     top: 0;
@@ -18,6 +16,14 @@
     &.fixed {
         animation: none;
         position: fixed;
-        top: -225px;
+        top: -256px;
+    }
+
+    @media screen and (max-width: 1200px)  {
+        height: calc(100vh + 256px);
+    }
+
+    @media screen and (max-width: 680px)  {
+        height: calc(100vh + 230px);
     }
 }

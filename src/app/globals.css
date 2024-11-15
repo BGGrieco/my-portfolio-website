@@ -10,13 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* body {
-  background:
-    radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2));
-  background-attachment: fixed;
-  background-size: cover;
-} */
-
 h2,
 h3,
 p {
@@ -31,8 +24,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2.15em;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 500;
   letter-spacing: -1px;
 }
 
@@ -46,7 +39,7 @@ p {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: -0.1px;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 a {
@@ -68,6 +61,7 @@ b {
 
 .feed {
   position: relative;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -82,7 +76,7 @@ b {
 }
 
 .spacerOne {
-  height: calc(100vh - 256px);
+  height: calc(100vh - 281px);
   width: 100vw;
 }
 
@@ -136,14 +130,6 @@ b {
   margin-top: 96px;
 }
 
-.hasMaxWidth {
-  max-width: var(--max-width);
-}
-
-.hasBackground {
-  background: var(--background-colour);
-}
-
 .fullWidth {
   width: 100%;
 }
@@ -160,21 +146,15 @@ b {
 }
 
 .card {
-  -webkit-backdrop-filter: blur(2px) saturate(1.5);
-  backdrop-filter: blur(2px) saturate(1.5);
-  background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(8px) saturate(3);
+  backdrop-filter: blur(8px) saturate(3);
+  background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
   border-left: 1px solid rgba(255, 255, 255, 0.8);
-  border-right: 1px solid rgba(255, 255, 255, 0.4);
   border-top: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 24px;
-  box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   padding: 42px 48px 48px 48px;
-}
-
-.opaque {
-  background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
 }
 
 .buttonContainer {
@@ -192,7 +172,7 @@ b {
   -webkit-backdrop-filter: blur(8px) saturate(1);
   backdrop-filter: blur(8px) saturate(1);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 24px;
+  border-radius: 12px;
   display: flex;
   font-size: 24px;
   font-weight: 600;
