@@ -77,7 +77,7 @@ export default function Home() {
     <main className={`main ${open ? 'noScroll' : ''}`}>
       <Hero />
       <div className="gradient"></div>
-      <div className="scrollIndicator" style={{ opacity: opacity }}></div>
+      <div className="scrollIndicator" style={{ opacity: opacity }}><img className="safari_only" src="/chevron.svg"/></div>
       <Intro />
       <div className="spacerOne"></div>
       <BrokenText />

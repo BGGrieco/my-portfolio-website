@@ -88,6 +88,7 @@ li:before {
     justify-content: space-between;
     margin: auto;
     min-height: 100vh;
+    overflow-x: hidden;
     width: 100vw;
 
     &.noScroll {
@@ -121,15 +122,20 @@ li:before {
 }
 
 .scrollIndicator {
-    background-image: url("/chevron.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px;
     height: 24px;
     left: 0;
     position: fixed;
     top: 4px;
     width: 100%;
+
+    img {
+        display: block;
+        height: 24px;
+        margin: auto;
+        position: relative;
+        transform: rotate(90deg);
+        width: auto;
+    }
 }
 
 .detailContainer {
