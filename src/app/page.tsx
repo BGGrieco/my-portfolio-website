@@ -64,6 +64,21 @@ export default function Home() {
       case "fourthCard": {
         setProjectContent(ProjecstInfo.unifarco);
       }
+      case "fifthCard": {
+        setProjectContent(ProjecstInfo.ePaper);
+      }
+        break;
+      case "sixthCard": {
+        setProjectContent(ProjecstInfo.customFit);
+      }
+        break;
+      case "seventhCard": {
+        setProjectContent(ProjecstInfo.pMp);
+      }
+        break;
+      case "eightCard": {
+        setProjectContent(ProjecstInfo.listen);
+      }
         break;
       default: {
         console.log("No Card");
@@ -141,6 +156,37 @@ export default function Home() {
               <ProjectCard
                 title="Unifarco"
                 subTitle="Design System"
+                imageUrl="/listen.png"
+              />
+            </div>
+          </div>
+
+          <div className="squaresGrid">
+            <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="The Irish Times"
+                subTitle="ePaper"
+                imageUrl="/w3bCTI.png"
+              />
+            </div>
+            <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="CustomFit"
+                subTitle="My M.Sc Thesis"
+                imageUrl="/customFit.png"
+              />
+            </div>
+            <div id="seventhCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="patientMpower"
+                subTitle="Patient App"
+                imageUrl="/pMpApp.png"
+              />
+            </div>
+            <div id="eightCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="The Irish Times"
+                subTitle="Listen"
                 imageUrl="/listen.png"
               />
             </div>
