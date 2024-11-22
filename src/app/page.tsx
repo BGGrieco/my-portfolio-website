@@ -64,6 +64,7 @@ export default function Home() {
       case "fourthCard": {
         setProjectContent(ProjecstInfo.unifarco);
       }
+      break;
       case "fifthCard": {
         setProjectContent(ProjecstInfo.ePaper);
       }
@@ -142,21 +143,21 @@ export default function Home() {
               <ProjectCard
                 title="Brembo"
                 subTitle="North America E-Commerce"
-                imageUrl="/customFit.png"
+                imageUrl="/brembo.png"
               />
             </div>
             <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
                 title="WindTre Business"
                 subTitle="Client Area"
-                imageUrl="/pMpApp.png"
+                imageUrl="/windTreBusiness.png"
               />
             </div>
             <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
                 title="Unifarco"
                 subTitle="Design System"
-                imageUrl="/listen.png"
+                imageUrl="/unifarco.png"
               />
             </div>
           </div>
@@ -166,13 +167,13 @@ export default function Home() {
               <ProjectCard
                 title="The Irish Times"
                 subTitle="ePaper"
-                imageUrl="/w3bCTI.png"
+                imageUrl="/ePaper.png"
               />
             </div>
             <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
                 title="CustomFit"
-                subTitle="My M.Sc Thesis"
+                subTitle="My M.Sc. Thesis"
                 imageUrl="/customFit.png"
               />
             </div>
