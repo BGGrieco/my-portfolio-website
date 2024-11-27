@@ -64,6 +64,22 @@ export default function Home() {
       case "fourthCard": {
         setProjectContent(ProjecstInfo.unifarco);
       }
+      break;
+      case "fifthCard": {
+        setProjectContent(ProjecstInfo.ePaper);
+      }
+        break;
+      case "sixthCard": {
+        setProjectContent(ProjecstInfo.customFit);
+      }
+        break;
+      case "seventhCard": {
+        setProjectContent(ProjecstInfo.pMp);
+      }
+        break;
+      case "eightCard": {
+        setProjectContent(ProjecstInfo.listen);
+      }
         break;
       default: {
         console.log("No Card");
@@ -127,20 +143,51 @@ export default function Home() {
               <ProjectCard
                 title="Brembo"
                 subTitle="North America E-Commerce"
-                imageUrl="/customFit.png"
+                imageUrl="/brembo.png"
               />
             </div>
             <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
                 title="WindTre Business"
                 subTitle="Client Area"
-                imageUrl="/pMpApp.png"
+                imageUrl="/windTreBusiness.png"
               />
             </div>
             <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
                 title="Unifarco"
                 subTitle="Design System"
+                imageUrl="/unifarco.png"
+              />
+            </div>
+          </div>
+
+          <div className="squaresGrid">
+            <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="The Irish Times"
+                subTitle="ePaper"
+                imageUrl="/ePaper.png"
+              />
+            </div>
+            <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="CustomFit"
+                subTitle="My M.Sc. Thesis"
+                imageUrl="/customFit.png"
+              />
+            </div>
+            <div id="seventhCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="patientMpower"
+                subTitle="Patient App"
+                imageUrl="/pMpApp.png"
+              />
+            </div>
+            <div id="eightCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <ProjectCard
+                title="The Irish Times"
+                subTitle="Listen"
                 imageUrl="/listen.png"
               />
             </div>
