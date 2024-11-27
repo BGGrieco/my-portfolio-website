@@ -47,6 +47,8 @@ export default function Home() {
 
   const handleProjectClick = (event) => {
     const value = event.currentTarget.getAttribute("id");
+    var root = document.getElementsByTagName( 'html' )[0];
+    root.style.overflowY = "hidden";
 
     switch (value) {
       case "firstCard": {
@@ -82,7 +84,7 @@ export default function Home() {
       }
         break;
       default: {
-        console.log("No Card");
+        root.style.overflowY = "scroll";
       }
     }
 
@@ -90,7 +92,7 @@ export default function Home() {
   };
 
   return (
-    <main className={`main ${open ? 'noScroll' : ''}`}>
+    <main className="main">
       <Hero />
       <div className="gradient"></div>
       <div className="scrollIndicator" style={{ opacity: opacity }}><img className="safari_only" src="/chevron.svg"/></div>
