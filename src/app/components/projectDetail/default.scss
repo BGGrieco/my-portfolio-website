@@ -59,6 +59,16 @@
     .detailImage {
         margin: -42px -48px 32px -48px;
         width: calc(100% + 96px);
+
+        @media screen and (max-width: 1200px) {
+            margin: -26px -32px 32px -32px;
+            width: calc(100% + 64px);
+        }
+
+        @media screen and (max-width: 680px) {
+            margin: -18px -24px 24px -24px;
+            width: calc(100% + 48px);
+        }
     }
 
     .detailWords {
