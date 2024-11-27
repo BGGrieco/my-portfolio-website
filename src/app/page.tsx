@@ -95,7 +95,7 @@ export default function Home() {
     <main className="main">
       <Hero />
       <div className="gradient"></div>
-      <div className="scrollIndicator" style={{ opacity: opacity }}><img className="safari_only" src="/chevron.svg"/></div>
+      <div className="scrollIndicator" style={{ opacity: opacity }}><img src="/chevron.svg"/></div>
       <Intro />
       <div className="spacerOne"></div>
       <BrokenText />
@@ -164,7 +164,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="squaresGrid">
+          <div className="squaresGrid squaresGridTwo">
             <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
                 title="The Irish Times"
