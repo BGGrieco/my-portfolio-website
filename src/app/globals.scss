@@ -90,11 +90,6 @@ li:before {
     min-height: 100vh;
     overflow-x: hidden;
     width: 100vw;
-
-    &.noScroll {
-        height: 100%;
-        overflow-y: hidden;
-    }
 }
 
 
