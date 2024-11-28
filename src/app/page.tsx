@@ -197,7 +197,6 @@ export default function Home() {
         </div>
 
         <div id="experienceSection" className="section">
-          <div id="experience" className="marginBottom_lrg"></div>
           <Image
             src="/experience.png"
             alt="Experience"
@@ -225,7 +224,6 @@ export default function Home() {
         </div>
 
         <div id="skillSection" className="section">
-          <div id="skills" className="marginBottom_lrg"></div>
           <Image
             src="/skills.png"
             alt="Skills"
@@ -239,7 +237,6 @@ export default function Home() {
         </div>
 
         <div id="aboutSection" className="section">
-          <div id="about" className="marginBottom_lrg"></div>
           <Image
             src="/about.png"
             alt="About"
