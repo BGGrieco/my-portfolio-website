@@ -144,13 +144,13 @@ export default function Home() {
             <div id="secondCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
                 title="Brembo"
-                subTitle="North America E-Commerce"
+                subTitle="E-Commerce"
                 imageUrl="/brembo.png"
               />
             </div>
             <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
               <ProjectCard
-                title="WindTre Business"
+                title="WindTre"
                 subTitle="Client Area"
                 imageUrl="/windTreBusiness.png"
               />
