@@ -1,7 +1,7 @@
 {
     "cyberPilot": {
         "imageURL": "/cyberPilotProj.png",
-        "title": "WindTre Business",
+        "title": "WindTre",
         "subtitle": "Cyber Security Portal",
         "entities": "Jakala, Shiroi Studio",
         "blurb1": "Design a self-assessment matrix to present various cybersecurity solutions to clients based on system-identified needs",
@@ -13,7 +13,7 @@
     "brembo": {
         "imageURL": "/bremboProj.png",
         "title": "Brembo",
-        "subtitle": "North America E-Commerce",
+        "subtitle": "E-Commerce",
         "entities": "AKQA, Shiroi Studio",
         "blurb1": "Benchmark the NA e-commerce website against competitors and partners to drive sales conversions",
         "blurb2": "Create and wireframed a sitemap to identify opportunities for improvement in the site's usability, and identify existing opportunities on the current e-commerce website",
@@ -23,7 +23,7 @@
     },
     "areaClienti": {
         "imageURL": "/windTreProj.png",
-        "title": "WindTre Business",
+        "title": "WindTre",
         "subtitle": "Re-design Client Portal",
         "entities": "Jakala, Shiroi Studio",
         "blurb1": "Develop interactive user solutions and design a secure self service portal",

@@ -63,7 +63,8 @@
     grid-gap: 24px;
     grid-template-columns: repeat(4, calc(80% - 40px));
     grid-template-rows: minmax(150px, 1fr);
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: visible;
   }
 
   #projectsSection .squaresGrid {
@@ -138,7 +139,7 @@
   }
 
   #projectsSection .squaresGrid {
-    margin: -24px 0 -48px -48px;
+    margin: -24px 0 -24px -48px;
     padding: 24px 48px;
     width: calc(100vw + 48px);
   }
