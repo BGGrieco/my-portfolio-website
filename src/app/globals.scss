@@ -139,13 +139,13 @@ li:before {
 
 .section {
     display: inline-block;
-    margin: 0 48px;
+    margin: 48px;
     max-width: 1440px;
     position: relative;
     z-index: 3;
 
     @media screen and (max-width: 680px) {
-        margin: 0 24px;
+        margin: 24px;
     }
 }
 
