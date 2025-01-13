@@ -5,25 +5,14 @@
 }
 
 .heroImage {
-    animation: parallax ease;
-    animation-timeline: scroll();
-    height: calc(100vh + 281px);
+    height: 100vh;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: auto;
 
-    &.fixed {
-        animation: none;
-        position: fixed;
-        top: -256px;
-    }
-
-    @media screen and (max-width: 1200px)  {
-        height: calc(100vh + 256px);
-    }
-
-    @media screen and (max-width: 680px)  {
-        height: calc(100vh + 230px);
+    @media screen and (min-width: 1200px)  {
+        height: auto;
+        width: 100vw;
     }
 }
