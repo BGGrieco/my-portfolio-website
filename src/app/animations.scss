@@ -17,6 +17,12 @@
     }
 }
 
+@keyframes parallax {
+    to {
+        transform: translateY(10000px);
+    }
+}
+
 @keyframes elevate {
     from {
         -webkit-backdrop-filter: blur(8px) saturate(1);
@@ -282,12 +288,6 @@
         height: auto;
         top: 15%;
         width: 40%;
-    }
-}
-
-@keyframes parallax {
-    to {
-        transform: translateY(10000px);
     }
 }
 

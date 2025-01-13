@@ -7,7 +7,7 @@ import "./default.scss";
 export default function AboutCard() {
   return (
     <div className="card aboutCard relativelyCentered fullWidth">
-      <h2 className="marginBottom_sm">I'm Brian,</h2>
+      <h2 className="marginBottom_xsm">I'm Brian,</h2>
       <div className="textAndButtons">
         <div>
           <p className="marginBottom_sm">
@@ -15,12 +15,8 @@ export default function AboutCard() {
             experience in designing E-commerce, SaaS, B2B, and B2C digital
             products.
           </p>
-          <p className="marginBottom_sm">
-            I’m currently working with a small and dedicated team at{" "}
-            <a href="https://shiroistudio.com/">ShiroiStudio</a>. Feel free to
-            get in touch:
-          </p>
           <p>
+            Feel free to get in touch:
             I’d love to hear from you, I’m always open to new opportunities and
             discussions.
           </p>

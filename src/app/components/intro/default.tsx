@@ -26,14 +26,14 @@ export default function Intro() {
       setShow(false);
       setOpacity("1");
     }
-  };
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", controlIntro);
     return () => {
       window.removeEventListener("scroll", controlIntro);
-    };
-  });
+    }
+  })
 
   return (
     <div

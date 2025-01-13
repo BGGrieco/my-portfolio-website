@@ -8,7 +8,7 @@ export default function Hero() {
   const [show, setShow] = useState(false);
   const [blur, setBlur] = useState("blur(0)");
   const [scroll, setScroll] = useState("0");
-  const scrollNumber = window.innerHeight - 282;
+  const scrollNumber = window.innerHeight - 256;
   const headerImageRef = useRef(null);
 
   function scrollBlur() {
@@ -23,25 +23,26 @@ export default function Hero() {
   }
 
   const controlHero = () => {
-    let scrolledHero = (window.innerHeight - window.scrollY) / 10000;
+    let scrolledHero = headerImageRef.current.height - (window.scrollY / 0.6);
 
     if (window.scrollY > scrollNumber) {
-      setShow(true);
       setScroll("-" + scrolledHero + "px");
+      console.log(scrolledHero);
+      setShow(true);
       setBlur(scrollBlur());
     } else {
       setShow(false);
       setScroll("0");
       setBlur("blur(0)");
     }
-  };
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", controlHero);
     return () => {
       window.removeEventListener("scroll", controlHero);
-    };
-  });
+    }
+  })
 
   return (
     <div className="hero">
@@ -56,6 +57,6 @@ export default function Hero() {
         ref={headerImageRef}
       />
       <Intro />
-    </div>
+    </div >
   );
 }

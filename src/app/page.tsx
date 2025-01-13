@@ -35,15 +35,15 @@ export default function Home() {
     } else {
       setOpacity("1");
     }
-  };
+  }
 
   useEffect(() => {
     window.addEventListener("scroll", controlIndicator);
 
     return () => {
       window.removeEventListener("scroll", controlIndicator);
-    };
-  });
+    }
+  })
 
   const handleProjectClick = (event) => {
     const value = event.currentTarget.getAttribute("id");
