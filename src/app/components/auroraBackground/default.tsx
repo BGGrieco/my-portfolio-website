@@ -8,8 +8,8 @@ export default function AuroraBackground() {
   function scrollOpacity() {
     let num = -1 + (window.scrollY / window.innerHeight) * 0.5;
     let result: string;
-    if (num > 0.6) {
-      result = "0.6";
+    if (num > 0.5) {
+      result = "0.5";
     } else {
       result = "" + num + "";
     }

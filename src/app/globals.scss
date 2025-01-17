@@ -65,6 +65,7 @@ b {
 
 ul {
     margin-left: 32px;
+    max-width: 80%;
 }
 
 li {
@@ -160,7 +161,7 @@ li:before {
 }
 
 .spacerOne {
-    height: calc(100vh - 281px);
+    height: calc(100vh - 256px);
     width: 100vw;
 }
 
@@ -256,7 +257,7 @@ li:before {
     -webkit-backdrop-filter: blur(8px) saturate(1);
     backdrop-filter: blur(8px) saturate(1);
     border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 12px;
+    border-radius: 16px;
     display: flex;
     font-size: 24px;
     font-weight: 600;
