@@ -5,11 +5,11 @@
     &.right {
         justify-content: right;
 
-        .imgContainer {
+        .statsContainer {
             order: 1;
         }
 
-        .imgContainer a {
+        .statsContainer a {
             left: 0;
         }
 
@@ -18,8 +18,9 @@
         }
     }
 
-    .imgContainer {
-        width: 33.3333333333%;
+    .statsContainer {
+        background-color: red;
+        width: calc(50% + 96px);
 
         * {
             display: block;
@@ -58,11 +59,11 @@
     }
 
     .experienceCard {
+        width: calc(50% - 96px);
+
         a:hover h3 {
             color: #6f6af8;
         }
-
-        width: 66.6666666666%;
 
         @media screen and (max-width: 920px) {
             width: 90%;
@@ -84,18 +85,15 @@
     }
 
     .experienceContent {
+        flex-direction: column;
         opacity: 0.9;
 
-        p:first-child {
-            margin: 0 24px 0 0;
+        p {
+            width: 80%
         }
 
-        @media screen and (max-width: 680px) {
-            flex-direction: column;
-
-            p:first-child {
-                margin: 0 0 24px 0;
-            }
+        p:nth-child(2) {
+            margin: 24px 0 0 0;
         }
     }
 }
