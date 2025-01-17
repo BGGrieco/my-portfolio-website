@@ -5,7 +5,7 @@ import "./default.scss";
 export default function BrokenText() {
   const [show, setShow] = useState(false);
   const [opacity, setOpacity] = useState("1");
-  const scrollNumber = (window.innerHeight * 2) - 282;
+  const scrollNumber = (window.innerHeight * 2) - 256;
 
   function scrollOpacity() {
     let num = 2 - (window.scrollY / window.innerHeight) * 0.6;
