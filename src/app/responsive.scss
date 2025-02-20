@@ -135,10 +135,6 @@
     height: calc(100vh - 230px);
   }
 
-  #projectsSection {
-    width: calc(100vw - 48px);
-  }
-
   #projectsSection .squaresGrid {
     margin: -24px 0 -24px -48px;
     padding: 24px 48px;
@@ -165,11 +161,6 @@
   #skills,
   #about {
     height: auto;
-  }
-
-  #skillSection,
-  #aboutSection {
-    width: calc(100% - 48px);
   }
 }
 

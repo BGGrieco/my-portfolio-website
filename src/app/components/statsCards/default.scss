@@ -1,0 +1,18 @@
+.statsContainer {
+    width: 50%;
+
+    @media screen and (max-width: 450px) {
+        margin-top: 24px;
+    }
+
+    .statsCard {
+        h1 {
+            color: rgba(0, 0, 0, 0.9);
+            text-align: center;
+        }
+
+        .statsCardSubtitle {
+            text-align: right;
+        }
+    }
+}

@@ -7,6 +7,7 @@ import BrokenText from "./components/brokenText/default";
 import AuroraBackground from "./components/auroraBackground/default";
 import ProjectCard from "./components/projectCard/default";
 import ExperienceCard from "./components/experienceCard/default";
+import StatsCards from "./components/statsCards/default";
 import SkillCard from "./components/skillCard/default";
 import AboutCard from "./components/aboutCard/default";
 import ProjectDetail from "./components/projectDetail/default";
@@ -47,7 +48,7 @@ export default function Home() {
 
   const handleProjectClick = (event) => {
     const value = event.currentTarget.getAttribute("id");
-    var root = document.getElementsByTagName( 'html' )[0];
+    var root = document.getElementsByTagName('html')[0];
     root.style.overflowY = "hidden";
 
     switch (value) {
@@ -66,7 +67,7 @@ export default function Home() {
       case "fourthCard": {
         setProjectContent(ProjecstInfo.unifarco);
       }
-      break;
+        break;
       case "fifthCard": {
         setProjectContent(ProjecstInfo.ePaper);
       }
@@ -95,7 +96,7 @@ export default function Home() {
     <main className="main">
       <Hero />
       <div className="gradient"></div>
-      <div className="scrollIndicator" style={{ opacity: opacity }}><img src="/chevron.svg"/></div>
+      <div className="scrollIndicator" style={{ opacity: opacity }}><img src="/chevron.svg" /></div>
       <Intro />
       <div className="spacerOne"></div>
       <BrokenText />
@@ -121,132 +122,143 @@ export default function Home() {
           role={projectContent.role}
         />
 
-        <div id="projectsSection" className="section">
-          <div id="projects" className="marginBottom_lrg"></div>
-          <Image
-            src="/projects.png"
-            alt="Projects"
-            layout="responsive"
-            className="marginBottom_med"
-            width={2725}
-            height={388}
-            priority={true}
-          />
-
-          <div className="squaresGrid">
-            <div id="firstCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="CyberPilot"
-                subTitle="Cyber Security Portal"
-                imageUrl="/w3bCTI.png"
-              />
-            </div>
-            <div id="secondCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="Brembo"
-                subTitle="E-Commerce"
-                imageUrl="/brembo.png"
-              />
-            </div>
-            <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="WindTre"
-                subTitle="Client Area"
-                imageUrl="/windTreBusiness.png"
-              />
-            </div>
-            <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="Unifarco"
-                subTitle="Design System"
-                imageUrl="/unifarco.png"
-              />
-            </div>
-          </div>
-
-          <div className="squaresGrid squaresGridTwo">
-            <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="The Irish Times"
-                subTitle="ePaper"
-                imageUrl="/ePaper.png"
-              />
-            </div>
-            <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="CustomFit"
-                subTitle="My M.Sc. Thesis"
-                imageUrl="/customFit.png"
-              />
-            </div>
-            <div id="seventhCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="patientMpower"
-                subTitle="Patient App"
-                imageUrl="/pMpApp.png"
-              />
-            </div>
-            <div id="eightCard" className="projectCardContainer" onClick={handleProjectClick}>
-              <ProjectCard
-                title="The Irish Times"
-                subTitle="Listen"
-                imageUrl="/listen.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div id="experienceSection" className="section">
-          <Image
-            src="/experience.png"
-            alt="Experience"
-            layout="responsive"
-            className="marginBottom_med"
-            width={2724}
-            height={333}
-          />
-
-          {ExperienceInfo.experience.map((item) => (
-            <ExperienceCard
-              key={item.id}
-              title={item.title}
-              subtitle={item.subtitle}
-              period={item.period}
-              alignment={item.alignment}
-              imageURL={item.imageURL}
-              info1={item.info1}
-              info2={item.info2}
-              content1={item.content1}
-              content2={item.content2}
-              linkURL={item.linkURL}
+        <div className="content">
+          <div id="projectsSection" className="section">
+            <div id="projects" className="marginBottom_lrg"></div>
+            <Image
+              src="/projects.png"
+              alt="Projects"
+              layout="responsive"
+              className="marginBottom_med"
+              width={2725}
+              height={388}
+              priority={true}
             />
-          ))}
-        </div>
 
-        <div id="skillSection" className="section">
-          <Image
-            src="/skills.png"
-            alt="Skills"
-            layout="responsive"
-            className="marginBottom_med"
-            width={2726}
-            height={558}
-          />
+            <div className="squaresGrid">
+              <div id="firstCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="CyberPilot"
+                  subTitle="Cyber Security Portal"
+                  imageUrl="/w3bCTI.png"
+                />
+              </div>
+              <div id="secondCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="Brembo"
+                  subTitle="E-Commerce"
+                  imageUrl="/brembo.png"
+                />
+              </div>
+              <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="WindTre"
+                  subTitle="Client Area"
+                  imageUrl="/windTreBusiness.png"
+                />
+              </div>
+              <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="Unifarco"
+                  subTitle="Design System"
+                  imageUrl="/unifarco.png"
+                />
+              </div>
+            </div>
 
-          <SkillCard />
-        </div>
+            <div className="squaresGrid squaresGridTwo">
+              <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="The Irish Times"
+                  subTitle="ePaper"
+                  imageUrl="/ePaper.png"
+                />
+              </div>
+              <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="CustomFit"
+                  subTitle="My M.Sc. Thesis"
+                  imageUrl="/customFit.png"
+                />
+              </div>
+              <div id="seventhCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="patientMpower"
+                  subTitle="Patient App"
+                  imageUrl="/pMpApp.png"
+                />
+              </div>
+              <div id="eightCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="The Irish Times"
+                  subTitle="Listen"
+                  imageUrl="/listen.png"
+                />
+              </div>
+            </div>
+          </div>
 
-        <div id="aboutSection" className="section">
-          <Image
-            src="/about.png"
-            alt="About"
-            layout="responsive"
-            className="marginBottom_med"
-            width={2726}
-            height={569}
-          />
+          <div id="experienceSection" className="section">
+            <Image
+              src="/experience.png"
+              alt="Experience"
+              layout="responsive"
+              className="marginBottom_med"
+              width={2724}
+              height={333}
+            />
 
-          <AboutCard />
+            {ExperienceInfo.experience.map((item) => (
+              <div className={`experienceContainer marginBottom_med ${item.alignment}`}>
+                <ExperienceCard
+                  key={item.id}
+                  title={item.title}
+                  subtitle={item.subtitle}
+                  period={item.period}
+                  info1={item.info1}
+                  info2={item.info2}
+                  content1={item.content1}
+                  content2={item.content2}
+                  linkURL={item.linkURL}
+                />
+
+                <StatsCards
+                  statsTitleOne={item.statsTitleOne}
+                  statsContentOne={item.statsContentOne}
+                  statsSubtitleOne={item.statsSubtitleOne}
+                  statsTitleTwo={item.statsTitleTwo}
+                  statsContentTwo={item.statsContentTwo}
+                  statsSubtitleTwo={item.statsSubtitleTwo}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* <div id="skillSection" className="section">
+            <Image
+              src="/skills.png"
+              alt="Skills"
+              layout="responsive"
+              className="marginBottom_med"
+              width={2726}
+              height={558}
+            />
+
+            <SkillCard />
+          </div> */}
+
+          <div id="aboutSection" className="section">
+            <Image
+              src="/about.png"
+              alt="About"
+              layout="responsive"
+              className="marginBottom_med"
+              width={2726}
+              height={569}
+            />
+
+            <AboutCard />
+          </div>
         </div>
       </div>
     </main>
