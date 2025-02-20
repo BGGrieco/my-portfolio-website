@@ -5,6 +5,10 @@
         padding: 26px 32px 32px 32px;
     }
 
+    @media screen and (max-width: 680px) {
+        padding: 18px 24px 24px 24px;
+    }
+
     .textAndButtons {
         display: flex;
         flex-direction: column;

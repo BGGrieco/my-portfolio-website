@@ -138,15 +138,22 @@ li:before {
     animation: openRight 0.3s forwards;
 }
 
-.section {
-    display: inline-block;
-    margin: 48px;
+.content {
+    display: block;
+    margin: auto;
     max-width: 1440px;
     position: relative;
     z-index: 3;
+}
+
+.section {
+    display: inline-block;
+    width: 100%;
+    padding: 48px;
+    position: relative;
 
     @media screen and (max-width: 680px) {
-        margin: 24px;
+        padding: 24px;
     }
 }
 
@@ -180,6 +187,7 @@ li:before {
 }
 
 .rightText {
+    line-height: 38px;
     text-align: right;
 }
 
@@ -213,6 +221,14 @@ li:before {
 
 .marginTop_lrg {
     margin-top: 96px;
+}
+
+.marginLeft_sm {
+    margin-left: 12px;
+}
+
+.marginRight_sm {
+    margin-right: 12px;
 }
 
 .fullWidth {
@@ -304,10 +320,6 @@ li:before {
 }
 
 /* GROUP DECLARATIONS */
-#projectsSection {
-    width: calc(100vw - 96px);
-}
-
 #projectsSection .squaresGrid {
     margin-left: -24px;
     width: calc(100% + 48px);
@@ -375,5 +387,86 @@ li:before {
 
     @media screen and (max-width: 820px) {
         margin: 0;
+    }
+}
+
+.experienceContainer {
+    display: inline-flex;
+    width: 100%;
+
+    @media screen and (max-width: 450px) {
+        flex-direction: column;
+        margin-right: 0;
+
+        .card {
+            padding: 8px 12px 12px 12px;
+        }
+    }
+
+    .experienceCard {
+        margin-left: 0;
+        margin-right: 24px;
+
+        @media screen and (min-width: 451px) and (max-width: 680px) {
+            margin-right: 12px;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin-right: 0;
+        }
+    }
+
+    .statsContainer {
+        margin-left: 24px;
+        margin-right: 0;
+
+        @media screen and (min-width: 451px) and (max-width: 680px) {
+            margin-left: 12px;
+        }
+
+        @media screen and (max-width: 450px) {
+            display: inline-flex;
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+
+    &.right {
+        justify-content: right;
+
+        .experienceCard {
+            margin-left: 24px;
+            margin-right: 0;
+
+            @media screen and (min-width: 451px) and (max-width: 680px) {
+                margin-left: 12px;
+            }
+
+            @media screen and (max-width: 450px) {
+                margin-left: 0;
+            }
+        }
+
+        .statsContainer {
+            margin-left: 0;
+            margin-right: 24px;
+            order: 1;
+
+            @media screen and (min-width: 451px) and (max-width: 680px) {
+                margin-right: 12px;
+            }
+
+            @media screen and (max-width: 450px) {
+                margin-right: 0;
+            }
+        }
+
+        .experienceCard {
+            order: 2;
+
+            @media screen and (max-width: 450px) {
+                order: 1;
+            }
+        }
     }
 }

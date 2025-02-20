@@ -4,14 +4,19 @@
       "id": 0,
       "title": "Shiroi Studio",
       "subtitle": "Senior Consultant",
-      "period": "09/2023 - Now",
+      "period": "09/2023 - 09/2024",
       "alignment": "left",
-      "imageURL": "/shiroi.png",
       "info1": "Clients:",
       "info2": "Industry Skills:",
-      "content1": "AKQA, Jakala s.p.a, Windtre s.p.a, Skipper, Zuegg, Il Sole 24 Ore.",
+      "content1": "AKQA, Jakala s.p.a, Windtre s.p.a, Skipper, Zuegg, Il Sole 24 Ore, Unifarco.",
       "content2": "SaaS, E-Commerce, Cyber Security, Telco, B2B, B2C.",
-      "linkURL": "https://shiroistudio.com/"
+      "linkURL": "https://shiroistudio.com/",
+      "statsTitleOne": "Windtre Client Portal",
+      "statsContentOne": "40%",
+      "statsSubtitleOne": "Efficiency boost",
+      "statsTitleTwo": "Unifarco Design System",
+      "statsContentTwo": "100%",
+      "statsSubtitleTwo": "Scalable solution"
     },
     {
       "id": 1,
@@ -19,12 +24,17 @@
       "subtitle": "UX/UI Designer",
       "period": "11/2019 - 03/2023",
       "alignment": "right",
-      "imageURL": "/irishTimes.png",
       "info1": "Responsibilities:",
       "info2": "Industry Skills:",
       "content1": "Mentorship, UX Research, UI-Design, CMS-building, Front-End, Go-to-market.",
       "content2": "SaaS, News and Media, B2B, B2C.",
-      "linkURL": "https://www.irishtimes.com/"
+      "linkURL": "https://www.irishtimes.com/",
+      "statsTitleOne": "Listen",
+      "statsContentOne": "15%",
+      "statsSubtitleOne": "Sales increase",
+      "statsTitleTwo": "Code Optimization",
+      "statsContentTwo": "10%",
+      "statsSubtitleTwo": "Efficiency increase"
     },
     {
       "id": 2,
@@ -32,12 +42,17 @@
       "subtitle": "Head of Design",
       "period": "06/2018 - 11/2019",
       "alignment": "left",
-      "imageURL": "/meg.png",
       "info1": "Responsibilities:",
       "info2": "Industry Skills:",
       "content1": "Mentorship, UX Research, UI-Design, Front-End, Go-to-market.",
-      "content2": "SaaS, Healthtech, B2B.",
-      "linkURL": "https://megit.com/"
+      "content2": "SaaS, HealthTech, B2B.",
+      "linkURL": "https://megit.com/",
+      "statsTitleOne": "UI Re-design and Implementation",
+      "statsContentOne": "20%",
+      "statsSubtitleOne": "Usage increase",
+      "statsTitleTwo": "App gamification",
+      "statsContentTwo": "10%",
+      "statsSubtitleTwo": "Engagement increase"
     },
     {
       "id": 3,
@@ -45,12 +60,17 @@
       "subtitle": "UX/UI Designer",
       "period": "12/2017 - 06/2018",
       "alignment": "right",
-      "imageURL": "/meg.png",
       "info1": "Responsibilities:",
       "info2": "Industry Skills:",
       "content1": "UI-Design, Front-End, Go-to-market.",
-      "content2": "SaaS, Healthtech, B2B.",
-      "linkURL": "https://megit.com/"
+      "content2": "SaaS, HealthTech, B2B.",
+      "linkURL": "https://megit.com/",
+      "statsTitleOne": "UX research",
+      "statsContentOne": "20+",
+      "statsSubtitleOne": "User interviews and tests",
+      "statsTitleTwo": "Front-end implementation",
+      "statsContentTwo": "4",
+      "statsSubtitleTwo": "Custom apps designed"
     },
     {
       "id": 4,
@@ -58,12 +78,17 @@
       "subtitle": "UX/UI Designer",
       "period": "12/2017 - 11/2019",
       "alignment": "left",
-      "imageURL": "/pmp.png",
       "info1": "Responsibilities:",
       "info2": "Industry Skills:",
       "content1": "UX Research, UI-Design, Front-End, Go-to-market.",
-      "content2": "SaaS, Healthtech, B2B, B2C.",
-      "linkURL": "https://patientmpower.com/"
+      "content2": "SaaS, HealthTech, B2B, B2C.",
+      "linkURL": "https://patientmpower.com/",
+      "statsTitleOne": "UX/UI re-design",
+      "statsContentOne": "60%",
+      "statsSubtitleOne": "Usability improvement",
+      "statsTitleTwo": "Feature design",
+      "statsContentTwo": "3",
+      "statsSubtitleTwo": "New features added"
     }
   ]
 }

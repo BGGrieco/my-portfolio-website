@@ -15,11 +15,11 @@ export default function AboutCard() {
             experience in designing E-commerce, SaaS, B2B, and B2C digital
             products.
           </p>
-          <p className="marginBottom_sm">
+          {/* <p className="marginBottom_sm">
             I’m currently working with a small and dedicated team at{" "}
             <a href="https://shiroistudio.com/">ShiroiStudio</a>. Feel free to
             get in touch:
-          </p>
+          </p> */}
           <p>
             I’d love to hear from you, I’m always open to new opportunities and
             discussions.
