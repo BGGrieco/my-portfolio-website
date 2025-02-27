@@ -34,3 +34,29 @@
         font-size: 16px;
     }
 }
+
+.miniButton .button {
+    animation: miniSink 0.3s ease forwards;
+    border: none;
+    justify-content: center;
+    min-width: 215px;
+    padding: 8px 12px;
+
+    &:hover {
+        animation: miniElevate 0.3s ease forwards;
+    }
+
+    @media screen and (max-width: 765px) {
+        font-size: 18px;
+        min-width: 152px;
+        padding: 8px 12px;
+    }
+
+    @media screen and (max-width: 580px) {
+        min-width: 0;
+    }
+
+    @media screen and (max-width: 385px) {
+        font-size: 16px;
+    }
+}
