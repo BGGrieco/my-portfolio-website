@@ -19,37 +19,73 @@
 
 @keyframes elevate {
     from {
-        -webkit-backdrop-filter: blur(8px) saturate(1);
-        backdrop-filter: blur(8px) saturate(1);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
+        // -webkit-backdrop-filter: blur(8px) saturate(1);
+        // backdrop-filter: blur(8px) saturate(1);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
         color: rgba(0, 0, 0, 0.8);
     }
 
     to {
-        -webkit-backdrop-filter: blur(24px) saturate(5);
-        backdrop-filter: blur(24px) saturate(5);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
+        // -webkit-backdrop-filter: blur(24px) saturate(5);
+        // backdrop-filter: blur(24px) saturate(5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
-        color: #6f6af8;
+        color: #5df7a7;
     }
 }
 
 @keyframes sink {
     from {
-        -webkit-backdrop-filter: blur(24px) saturate(5);
-        backdrop-filter: blur(24px) saturate(5);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
+        // -webkit-backdrop-filter: blur(24px) saturate(5);
+        // backdrop-filter: blur(24px) saturate(5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
-        color: #6f6af8;
+        color: #5df7a7;
     }
 
     to {
-        -webkit-backdrop-filter: blur(8px) saturate(1);
-        backdrop-filter: blur(8px) saturate(1);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
+        // -webkit-backdrop-filter: blur(8px) saturate(1);
+        // backdrop-filter: blur(8px) saturate(1);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
         box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
         color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes miniElevate {
+    from {
+        // -webkit-backdrop-filter: blur(8px) saturate(1);
+        // backdrop-filter: blur(8px) saturate(1);
+        // background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0), rgba(200, 200, 200, 0));
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0);
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    to {
+        // -webkit-backdrop-filter: blur(24px) saturate(5);
+        // backdrop-filter: blur(24px) saturate(5);
+        // background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.2));
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+        color: #15D16B;
+    }
+}
+
+@keyframes miniSink {
+    from {
+        // -webkit-backdrop-filter: blur(24px) saturate(5);
+        // backdrop-filter: blur(24px) saturate(5);
+        // background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.2));
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+        color: #15D16B;
+    }
+
+    to {
+        // -webkit-backdrop-filter: blur(8px) saturate(1);
+        // backdrop-filter: blur(8px) saturate(1);
+        // background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0), rgba(200, 200, 200, 0));
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0);
+        color: rgba(255, 255, 255, 0.8);
     }
 }
 
@@ -59,13 +95,13 @@
     }
 
     to {
-        stroke: rgba(111, 106, 248, 1);
+        stroke: rgba(93, 247, 167, 1);
     }
 }
 
 @keyframes deColorIt {
     from {
-        stroke: rgba(111, 106, 248, 1);
+        stroke: rgba(93, 247, 167, 1);
     }
 
     to {
@@ -137,7 +173,7 @@
     from {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.2));
         box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.4);
         height: 100%;
         margin: 0;
@@ -159,7 +195,7 @@
     from {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.2));
         box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
         height: 100%;
         margin: 0;
@@ -191,7 +227,7 @@
     to {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.2));
         box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.6);
         height: 100%;
         margin: 0;
@@ -213,7 +249,7 @@
     to {
         -webkit-backdrop-filter: blur(8px) saturate(3);
         backdrop-filter: blur(8px) saturate(3);
-        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.4), rgba(200, 200, 200, 0.2));
         box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
         height: 100%;
         margin: 0;

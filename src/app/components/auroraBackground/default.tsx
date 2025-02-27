@@ -6,7 +6,7 @@ export default function AuroraBackground() {
   const [opacity, setOpacity] = useState("0");
 
   function scrollOpacity() {
-    let num = -1 + (window.scrollY / window.innerHeight) * 0.5;
+    let num = -0.6 + (window.scrollY / window.innerHeight);
     let result: string;
     if (num > 0.5) {
       result = "0.5";
@@ -17,7 +17,7 @@ export default function AuroraBackground() {
   }
 
   const controlAurora = () => {
-    if (window.scrollY > 1408) {
+    if (window.scrollY > 1) {
       setOpacity(scrollOpacity());
     } else {
       setOpacity("0");

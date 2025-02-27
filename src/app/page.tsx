@@ -1,9 +1,8 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import IntroCard from "./components/introCard/default";
 import Hero from "./components/hero/default";
-import Intro from "./components/intro/default";
-import BrokenText from "./components/brokenText/default";
 import AuroraBackground from "./components/auroraBackground/default";
 import ProjectCard from "./components/projectCard/default";
 import ExperienceCard from "./components/experienceCard/default";
@@ -95,13 +94,9 @@ export default function Home() {
   return (
     <main className="main">
       <Hero />
+      <IntroCard />
       <div className="gradient"></div>
       <div className="scrollIndicator" style={{ opacity: opacity }}><img src="/chevron.svg" /></div>
-      <Intro />
-      <div className="spacerOne"></div>
-      <BrokenText />
-      <div className="spacerTwo"></div>
-      <div className="spacerTwo"></div>
 
       <div className="feed">
         <AuroraBackground />

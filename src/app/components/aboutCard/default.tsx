@@ -1,8 +1,8 @@
+import "./default.scss";
 import Button from "../button/default";
 import ExternalProfile from "./externalProfile/default";
 import EmailIcon from "../../../../public/email.svg";
 import PhoneIcon from "../../../../public/phone.svg";
-import "./default.scss";
 
 export default function AboutCard() {
   return (
@@ -11,15 +11,14 @@ export default function AboutCard() {
       <div className="textAndButtons">
         <div>
           <p className="marginBottom_sm">
-            A UX/UI Designer with good front end skills and seven years of
-            experience in designing E-commerce, SaaS, B2B, and B2C digital
-            products.
+            And I lead teams to success by supporting and mentoring members, ensuring clear and speedy
+            communication between stakeholders, and driving product innovation.
           </p>
-          {/* <p className="marginBottom_sm">
-            I’m currently working with a small and dedicated team at{" "}
-            <a href="https://shiroistudio.com/">ShiroiStudio</a>. Feel free to
+          <p className="marginBottom_sm">
+            I’m currently leading a team of digital transformation experts at{" "}
+            <a href="https://nortal.com/">Nortal</a>. Feel free to
             get in touch:
-          </p> */}
+          </p>
           <p>
             I’d love to hear from you, I’m always open to new opportunities and
             discussions.
@@ -31,11 +30,13 @@ export default function AboutCard() {
             href="mailto:brian.g.grieco@gmail.com"
             svg={<EmailIcon />}
             text="brian.g.grieco@gmail.com"
+            className=""
           />
           <Button
             href="tel:+393707026255"
             svg={<PhoneIcon />}
             text="+39 370 702 6255"
+            className=""
           />
         </div>
       </div>
