@@ -31,12 +31,14 @@ export default function AboutCard() {
             svg={<EmailIcon />}
             text="brian.g.grieco@gmail.com"
             className=""
+            onClick={""}
           />
           <Button
             href="tel:+393707026255"
             svg={<PhoneIcon />}
             text="+39 370 702 6255"
             className=""
+            onClick={""}
           />
         </div>
       </div>

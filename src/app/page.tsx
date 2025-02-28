@@ -119,7 +119,7 @@ export default function Home() {
 
         <div className="content">
           <div id="projectsSection" className="section">
-            <div id="projects" className="marginBottom_lrg"></div>
+            <div id="projects"></div>
             <Image
               src="/projects.png"
               alt="Projects"
