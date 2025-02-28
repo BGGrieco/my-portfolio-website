@@ -6,6 +6,7 @@
     color: #ffffff;
     height: fit-content;
     margin: auto;
+    max-width: 90%;
     position: relative;
     text-align: center;
     top: 50%;
@@ -33,6 +34,13 @@
                 display: block;
                 margin: auto;
                 position: relative;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            img {
+                height: 120px;
+                width: 120px;
             }
         }
     }
