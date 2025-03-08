@@ -12,10 +12,10 @@ export default function ProjectDetail({ className, title, subTitle, imageUrl, en
         <p>{entities}</p>
         <p className="marginTop_xsm"><b>Project Requirements:</b></p>
         <ul>
-          <li>{blurb1}</li>
-          <li>{blurb2}</li>
-          <li>{blurb3}</li>
-          <li>{blurb4}</li>
+          <li dangerouslySetInnerHTML={{__html: blurb1}}></li>
+          <li dangerouslySetInnerHTML={{__html: blurb2}}></li>
+          <li dangerouslySetInnerHTML={{__html: blurb3}}></li>
+          <li dangerouslySetInnerHTML={{__html: blurb4}}></li>
         </ul>
         <p className="marginTop_xsm"><b>Role and Responsibilities:</b></p>
         <p>{role}</p>
