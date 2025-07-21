@@ -199,11 +199,6 @@ b {
   grid-column: 1 / 1;
 }
 
-.squaresGrid > *:first-child {
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
-}
-
 .arrow {
   bottom: 18px;
   display: block;

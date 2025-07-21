@@ -130,7 +130,66 @@ export default function Home() {
               priority={true}
             />
 
-            <div className="squaresGrid">
+            <div className="squaresGrid desktopGrid">
+              <div id="firstCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="CyberPilot"
+                  subTitle="Cyber Security Portal"
+                  imageUrl="/w3bCTI.png"
+                />
+              </div>
+              <div id="secondCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="Brembo"
+                  subTitle="E-Commerce"
+                  imageUrl="/brembo.png"
+                />
+              </div>
+              <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="WindTre"
+                  subTitle="Client Area"
+                  imageUrl="/windTreBusiness.png"
+                />
+              </div>
+              <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="Unifarco"
+                  subTitle="Design System"
+                  imageUrl="/unifarco.png"
+                />
+              </div>
+              <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="The Irish Times"
+                  subTitle="ePaper"
+                  imageUrl="/ePaper.png"
+                />
+              </div>
+              <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="CustomFit"
+                  subTitle="My M.Sc. Thesis"
+                  imageUrl="/customFit.png"
+                />
+              </div>
+              <div id="seventhCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="patientMpower"
+                  subTitle="Patient App"
+                  imageUrl="/pMpApp.png"
+                />
+              </div>
+              <div id="eightCard" className="projectCardContainer" onClick={handleProjectClick}>
+                <ProjectCard
+                  title="The Irish Times"
+                  subTitle="Listen"
+                  imageUrl="/listen.png"
+                />
+              </div>
+            </div>
+
+            <div className="squaresGrid phoneGrid">
               <div id="firstCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="CyberPilot"
@@ -161,7 +220,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="squaresGrid squaresGridTwo">
+            <div className="squaresGrid phoneGrid twoGrid">
               <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="The Irish Times"

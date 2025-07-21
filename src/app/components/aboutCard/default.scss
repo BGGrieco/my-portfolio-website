@@ -37,12 +37,18 @@
     }
 
     .squaresGrid {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         margin-bottom: -12px;
         position: relative;
 
         @media screen and (max-width: 820px) {
+            grid-gap: 24px;
+            grid-template-columns: repeat(4, calc(80% - 40px));
+            grid-template-rows: minmax(150px, 1fr);
             left: -32px;
             margin-bottom: 0;
+            overflow-x: scroll;
+            overflow-y: visible;
             padding: 0 32px;
             width: calc(100% + 64px);
         }
