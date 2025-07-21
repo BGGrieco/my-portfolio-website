@@ -18,7 +18,7 @@ export default function IntroCard() {
                     />
                     <div className="title">
                         <h1>Brian G. Grieco</h1>
-                        <h2>UX Researcher | Digital Consultant | Team Lead</h2>
+                        <h2>Product Manager | Experience Researcher</h2>
                     </div>
                 </div>
 

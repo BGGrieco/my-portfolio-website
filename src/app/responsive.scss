@@ -85,6 +85,21 @@
 
   .phoneGrid {
     display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(4, calc(80% - 40px));
+    grid-template-rows: minmax(150px, 1fr);
+    overflow-x: scroll;
+    overflow-y: visible;
+  }
+
+  #projectsSection .phoneGrid {
+    margin-left: -48px;
+    padding: 0 48px 24px 48px;
+    width: 100vw;
+  }
+
+  #projectsSection .twoGrid {
+    direction: rtl;
   }
 }
 
@@ -102,25 +117,6 @@
 
   li {
     margin: 12px 0;
-  }
-
-  .squaresGrid {
-    display: grid;
-    grid-gap: 24px;
-    grid-template-columns: repeat(4, calc(80% - 40px));
-    grid-template-rows: minmax(150px, 1fr);
-    overflow-x: scroll;
-    overflow-y: visible;
-  }
-
-  #projectsSection .squaresGrid {
-    margin-left: -48px;
-    padding: 0 48px 24px 48px;
-    width: 100vw;
-  }
-
-  #projectsSection .squaresGridTwo {
-    direction: rtl;
   }
 }
 

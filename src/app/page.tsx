@@ -220,7 +220,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="squaresGrid squaresGridTwo phoneGrid">
+            <div className="squaresGrid phoneGrid twoGrid">
               <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="The Irish Times"
