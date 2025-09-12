@@ -20,14 +20,14 @@ export default function StatsCards({
 
     return (
         <div className="statsContainer">
-            <div className={`card statsCard ${windowSize <= 520 ? 'marginRight_sm' : 'marginBottom_med'}`}>
+            <div className={`card statsCard ${windowSize >= 820 ? 'marginRight_sm marginBottom_med' : 'marginRight_sm marginBottom_sm'}`}>
                 <p><b>{statsTitleOne}</b></p>
                 <h1 className="marginTop_sm marginBottom_sm">
                     <b>{statsContentOne}</b>
                 </h1>
                 <p className="statsCardSubtitle">{statsSubtitleOne}</p>
             </div>
-            <div className={`card statsCard ${windowSize <= 520 ? 'marginLeft_sm' : 'marginTop_med'}`}>
+            <div className="card statsCard">
                 <p><b>{statsTitleTwo}</b></p>
                 <h1 className="marginTop_sm marginBottom_sm">
                     <b>{statsContentTwo}</b>

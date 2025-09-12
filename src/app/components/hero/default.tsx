@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="hero">
       <Image
         src="/duomo.jpg"
-        alt="Hero Image"
+        alt="Hero Image of the duomo in Milan"
         className="heroImage"
         width={1620}
         height={1080}

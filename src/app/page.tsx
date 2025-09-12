@@ -7,7 +7,6 @@ import AuroraBackground from "./components/auroraBackground/default";
 import ProjectCard from "./components/projectCard/default";
 import ExperienceCard from "./components/experienceCard/default";
 import StatsCards from "./components/statsCards/default";
-import SkillCard from "./components/skillCard/default";
 import AboutCard from "./components/aboutCard/default";
 import ProjectDetail from "./components/projectDetail/default";
 import ProjecstInfo from "./projects.json";
@@ -51,35 +50,35 @@ export default function Home() {
     root.style.overflowY = "hidden";
 
     switch (value) {
-      case "firstCard": {
+      case "cyberPilotCard": {
         setProjectContent(ProjecstInfo.cyberPilot);
       }
         break;
-      case "secondCard": {
+      case "bremboCard": {
         setProjectContent(ProjecstInfo.brembo);
       }
         break;
-      case "thirdCard": {
+      case "windTreCard": {
         setProjectContent(ProjecstInfo.areaClienti);
       }
         break;
-      case "fourthCard": {
+      case "unifarcoCard": {
         setProjectContent(ProjecstInfo.unifarco);
       }
         break;
-      case "fifthCard": {
+      case "epaperCard": {
         setProjectContent(ProjecstInfo.ePaper);
       }
         break;
-      case "sixthCard": {
+      case "customFitCard": {
         setProjectContent(ProjecstInfo.customFit);
       }
         break;
-      case "seventhCard": {
+      case "pMpCard": {
         setProjectContent(ProjecstInfo.pMp);
       }
         break;
-      case "eightCard": {
+      case "listenCard": {
         setProjectContent(ProjecstInfo.listen);
       }
         break;
@@ -131,56 +130,56 @@ export default function Home() {
             />
 
             <div className="squaresGrid desktopGrid">
-              <div id="firstCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="cyberPilotCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="CyberPilot"
                   subTitle="Cyber Security Portal"
                   imageUrl="/w3bCTI.png"
                 />
               </div>
-              <div id="secondCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="bremboCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="Brembo"
                   subTitle="E-Commerce"
                   imageUrl="/brembo.png"
                 />
               </div>
-              <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="windTreCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="WindTre"
                   subTitle="Client Area"
                   imageUrl="/windTreBusiness.png"
                 />
               </div>
-              <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="unifarcoCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="Unifarco"
                   subTitle="Design System"
                   imageUrl="/unifarco.png"
                 />
               </div>
-              <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="epaperCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="The Irish Times"
                   subTitle="ePaper"
                   imageUrl="/ePaper.png"
                 />
               </div>
-              <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="customFitCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="CustomFit"
                   subTitle="My M.Sc. Thesis"
                   imageUrl="/customFit.png"
                 />
               </div>
-              <div id="seventhCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="pMpCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="patientMpower"
                   subTitle="Patient App"
                   imageUrl="/pMpApp.png"
                 />
               </div>
-              <div id="eightCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="listenCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="The Irish Times"
                   subTitle="Listen"
@@ -190,28 +189,28 @@ export default function Home() {
             </div>
 
             <div className="squaresGrid phoneGrid">
-              <div id="firstCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="cyberPilotCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="CyberPilot"
                   subTitle="Cyber Security Portal"
                   imageUrl="/w3bCTI.png"
                 />
               </div>
-              <div id="secondCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="bremboCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="Brembo"
                   subTitle="E-Commerce"
                   imageUrl="/brembo.png"
                 />
               </div>
-              <div id="thirdCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="windTreCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="WindTre"
                   subTitle="Client Area"
                   imageUrl="/windTreBusiness.png"
                 />
               </div>
-              <div id="fourthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="unifarcoCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="Unifarco"
                   subTitle="Design System"
@@ -221,28 +220,28 @@ export default function Home() {
             </div>
 
             <div className="squaresGrid phoneGrid twoGrid">
-              <div id="fifthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="epaperCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="The Irish Times"
                   subTitle="ePaper"
                   imageUrl="/ePaper.png"
                 />
               </div>
-              <div id="sixthCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="customFitCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="CustomFit"
                   subTitle="My M.Sc. Thesis"
                   imageUrl="/customFit.png"
                 />
               </div>
-              <div id="seventhCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="pMpCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="patientMpower"
                   subTitle="Patient App"
                   imageUrl="/pMpApp.png"
                 />
               </div>
-              <div id="eightCard" className="projectCardContainer" onClick={handleProjectClick}>
+              <div id="listenCard" className="projectCardContainer" onClick={handleProjectClick}>
                 <ProjectCard
                   title="The Irish Times"
                   subTitle="Listen"
@@ -263,7 +262,7 @@ export default function Home() {
             />
 
             {ExperienceInfo.experience.map((item) => (
-              <div className={`experienceContainer marginBottom_med ${item.alignment}`}>
+              <div className={`experienceContainer ${item.alignment}`}>
                 <ExperienceCard
                   key={item.id}
                   title={item.title}
