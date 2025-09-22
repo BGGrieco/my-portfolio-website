@@ -1,20 +1,9 @@
 .hero {
+    background-image: url("../../../../public/duomo.jpg");
     height: 100vh;
+    object-fit: cover;
     overflow-x: hidden;
     overflow-y: auto;
     position: fixed;
     width: 100vw;
-}
-
-.heroImage {
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: auto;
-
-    @media screen and (min-width: 1260px) {
-        height: auto;
-        width: 100%;
-    }
 }
