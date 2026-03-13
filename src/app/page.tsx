@@ -9,18 +9,20 @@ import ExperienceCard from "./components/experienceCard/default";
 import StatsCards from "./components/statsCards/default";
 import AboutCard from "./components/aboutCard/default";
 import ProjectDetail from "./components/projectDetail/default";
-import ProjecstInfo from "./projects.json";
+import ProjectsInfo from "./projects.json";
 import ExperienceInfo from "./experience.json";
 
 export default function Home() {
 
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
-
-  const [projectContent, setProjectContent] = useState(ProjecstInfo.cyberPilot);
+  const [projectContent, setProjectContent] = useState(ProjectsInfo.cyberPilot);
   const [open, setOpen] = useState(false);
   const [opacity, setOpacity] = useState("1");
+
+  // useEffect(() => {
+  //   window.onbeforeunload = function () {
+  //     window.scrollTo(0, 0);
+  //   }
+  // });
 
   function scrollmainOpacity() {
     let num = 1 - (window.scrollY / 50);
@@ -51,35 +53,35 @@ export default function Home() {
 
     switch (value) {
       case "cyberPilotCard": {
-        setProjectContent(ProjecstInfo.cyberPilot);
+        setProjectContent(ProjectsInfo.cyberPilot);
       }
         break;
       case "bremboCard": {
-        setProjectContent(ProjecstInfo.brembo);
+        setProjectContent(ProjectsInfo.brembo);
       }
         break;
       case "windTreCard": {
-        setProjectContent(ProjecstInfo.areaClienti);
+        setProjectContent(ProjectsInfo.areaClienti);
       }
         break;
       case "unifarcoCard": {
-        setProjectContent(ProjecstInfo.unifarco);
+        setProjectContent(ProjectsInfo.unifarco);
       }
         break;
       case "epaperCard": {
-        setProjectContent(ProjecstInfo.ePaper);
+        setProjectContent(ProjectsInfo.ePaper);
       }
         break;
       case "customFitCard": {
-        setProjectContent(ProjecstInfo.customFit);
+        setProjectContent(ProjectsInfo.customFit);
       }
         break;
       case "pMpCard": {
-        setProjectContent(ProjecstInfo.pMp);
+        setProjectContent(ProjectsInfo.pMp);
       }
         break;
       case "listenCard": {
-        setProjectContent(ProjecstInfo.listen);
+        setProjectContent(ProjectsInfo.listen);
       }
         break;
       default: {
@@ -101,7 +103,6 @@ export default function Home() {
         <AuroraBackground />
 
         <div className={`overlay ${open ? 'overlayOpen' : ''}`} onClick={handleProjectClick}></div>
-
         <ProjectDetail
           className={`card projectDetail ${open ? 'open' : ''}`}
           imageUrl={projectContent.imageURL}
@@ -262,7 +263,8 @@ export default function Home() {
             />
 
             {ExperienceInfo.experience.map((item) => (
-              <div className={`experienceContainer ${item.alignment}`}>
+              <div className={`experienceContainer ${item.alignment}`}
+                key={item.idPosition}>
                 <ExperienceCard
                   key={item.id}
                   title={item.title}
@@ -276,6 +278,7 @@ export default function Home() {
                 />
 
                 <StatsCards
+                  key={item.idString}
                   statsTitleOne={item.statsTitleOne}
                   statsContentOne={item.statsContentOne}
                   statsSubtitleOne={item.statsSubtitleOne}
@@ -286,19 +289,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-
-          {/* <div id="skillSection" className="section">
-            <Image
-              src="/skills.png"
-              alt="Skills"
-              layout="responsive"
-              className="marginBottom_med"
-              width={2726}
-              height={558}
-            />
-
-            <SkillCard />
-          </div> */}
 
           <div id="aboutSection" className="section">
             <Image

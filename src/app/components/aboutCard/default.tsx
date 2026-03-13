@@ -7,7 +7,7 @@ import PhoneIcon from "../../../../public/phone.svg";
 export default function AboutCard() {
   return (
     <div className="card aboutCard relativelyCentered fullWidth">
-      <h2 className="marginBottom_sm">I'm Brian,</h2>
+      <h2 className="marginBottom_sm">I&apos;m Brian,</h2>
       <div className="textAndButtons">
         <div>
           <p className="marginBottom_sm">
@@ -15,12 +15,12 @@ export default function AboutCard() {
             communication between stakeholders, and driving product innovation.
           </p>
           <p className="marginBottom_sm">
-            I’m currently leading a team of digital transformation experts at{" "}
+            I&apos;m currently leading a team of digital transformation experts at{" "}
             <a href="https://nortal.com/">Nortal</a>. Feel free to
             get in touch:
           </p>
           <p>
-            I’d love to hear from you, I’m always open to new opportunities and
+            I’d love to hear from you, I&apos;m always open to new opportunities and
             discussions.
           </p>
         </div>
@@ -31,14 +31,14 @@ export default function AboutCard() {
             svg={<EmailIcon />}
             text="brian.g.grieco@gmail.com"
             className=""
-            onClick={""}
+            onClick={null}
           />
           <Button
             href="tel:+393707026255"
             svg={<PhoneIcon />}
             text="+39 370 702 6255"
             className=""
-            onClick={""}
+            onClick={null}
           />
         </div>
       </div>

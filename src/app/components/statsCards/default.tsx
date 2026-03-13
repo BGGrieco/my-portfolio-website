@@ -1,4 +1,6 @@
+"use client"
 import { useEffect, useState } from "react";
+import WindowFunction from "./windowFunction/default";
 import "./default.scss";
 
 export default function StatsCards({
@@ -9,18 +11,29 @@ export default function StatsCards({
     statsContentTwo,
     statsSubtitleTwo
 }) {
-    const [windowSize, setWindowSize] = useState(window.innerWidth)
+
+    const [windowWidth, setWindowWidth] = useState(WindowFunction);
+
+    // function getWindowWidth() {
+    //     const { innerWidth: width } = window;
+    //     return {
+    //         width
+    //     };
+    // }
+
     useEffect(() => {
-        const updateWindowDimensions = () => {
-            setWindowSize(window.innerWidth)
+        function handleResize() {
+            setWindowWidth(WindowFunction);
         }
-        window.addEventListener('resize', updateWindowDimensions)
-        return () => window.removeEventListener('resize', updateWindowDimensions)
-    }, [])
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <div className="statsContainer">
-            <div className={`card statsCard ${windowSize >= 820 ? 'marginRight_sm marginBottom_med' : 'marginRight_sm marginBottom_sm'}`}>
+            <div
+            // className={`card statsCard ${getWindowWidth() >= 820 ? 'marginRight_sm marginBottom_med' : 'marginRight_sm marginBottom_sm'}`}
+            >
                 <p><b>{statsTitleOne}</b></p>
                 <h1 className="marginTop_sm marginBottom_sm">
                     <b>{statsContentOne}</b>

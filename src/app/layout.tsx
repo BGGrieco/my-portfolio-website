@@ -8,9 +8,9 @@ import "./responsive.scss";
 const wSans = Work_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   openGraph: {
-    title: "Brian G. Grieco | Digital Consulting | UX Research",
+    title: "Brian G. Grieco | Product Manager | UX Researcher",
     description:
-      "Official website of UX Researcher, UI Designer, and Front-end Developer Brian Grieco.",
+      "Official website of Product Manager and UX Researcher Brian Grieco.",
     url: "https://bggrieco.github.io/",
     siteName: "Brian Grieco UX",
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "https://nextjs.org/og-alt.png",
         width: 1800,
         height: 1600,
-        alt: "Brian grieco Portfolio OG Image",
+        alt: "Brian Grieco Portfolio OG Image",
       },
     ],
     locale: "en_IRL",
@@ -53,7 +53,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={wSans.className}>
         <LoadingScreen />
-        {/* <NavBar /> */}
         {children}
         <Footer />
       </body>
